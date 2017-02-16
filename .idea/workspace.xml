@@ -2,199 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2ebf31a-54d5-4357-a0cb-14c55b6dea37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/apple-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/arrow-left.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/arrow-left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/arrow-right.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/arrow-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/avatar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/bg2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/bg3.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/bg4.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/christian.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/city.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/default-avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/chris9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/examples/city.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/AD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/AE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/AG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/AM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/AR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/AT.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/AU.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/BE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/BF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/BG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/BO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/BR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/CZ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/DE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/DJ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/DK.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/DZ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/EE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/EG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/ES.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/FI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/FR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/GA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/GB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/GM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/GT.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/HN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/HT.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/HU.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/ID.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/IE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/IL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/IN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/IQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/IR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/IT.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/JM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/JO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/JP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/KG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/KN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/KP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/KR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/KW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/KZ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/LA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/LB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/LC.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/LU.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/LV.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/MG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/MK.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/ML.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/MM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/MT.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/MX.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/NA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/NE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/NG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/NI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/NL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/NO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/OM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/PA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/PE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/PG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/PK.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/PL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/PT.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/PY.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/QA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/RO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/RU.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/RW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/SA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/SE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/SG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/SL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/SN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/SO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/SV.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/TD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/TJ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/TL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/TR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/TZ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/UA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/US.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/VE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/VN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/flags/YE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/kendall.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/marc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/material-kit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/material-kit.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/loading-bubbles.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/material-kit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/material.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/nouislider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_alerts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_cards.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_carousel.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_checkboxes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_colors.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_dialogs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_dividers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_dropdown.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_example-pages.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_footers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_form.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_images.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_import-bs-less.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_import-bs-sass.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_info-areas.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_inputs-size.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_labels.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_lists.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_navbar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_pagination.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_panels.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_pills.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_popups.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_progress.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_radios.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_ripples.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_sections.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_shadows.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_tabs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_togglebutton.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_variables_bootstrap.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/_welljumbo.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/plugins/_plugin-datepicker.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/plugins/_plugin-dropdownjs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/plugins/_plugin-nouislider.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/plugins/_plugin-selectize.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/material-kit/plugins/_plugin-snackbarjs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components-documentation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/landing-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/profile-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/signup-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -222,9 +32,22 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="107" column="46" lean-forward="false" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+            <state relative-caret-position="528">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="55" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="88">
+                <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -244,6 +67,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -318,7 +142,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,9 +157,124 @@
     <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\hoerbst.website\assets\img\technologys" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\hoerbst.website\assets\img\technologys" />
+      <recent name="C:\Users\julia\hoerbst.website\assets\img" />
       <recent name="C:\Users\julia\hoerbst.website" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/index.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.Xampp">
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -408,22 +347,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487233878281</updated>
-      <workItem from="1487233879483" duration="4083000" />
+      <workItem from="1487233879483" duration="7187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4083000" />
+    <option name="totallyTimeSpent" value="7187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -465,10 +404,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="88">
+            <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="107" column="46" lean-forward="false" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+        <state relative-caret-position="528">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="55" />
           <folding />
         </state>
       </provider>
