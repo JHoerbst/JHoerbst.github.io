@@ -29,8 +29,15 @@
 </head>
 
 <body class="index-page">
+<header style="margin-top: -20px;">
+    <h1>Julian Hörbst</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon class="svg--sm" fill="#cccccc" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+        <polygon class="svg--lg" fill="#cccccc" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+    </svg>
+</header>
 <!-- Navbar -->
-<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+<nav style="background-color: #235466" class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
@@ -81,23 +88,10 @@
 </nav>
 <!-- End Navbar -->
 
-<div class="wrapper">
-    <div class="header header-filter" style="background-image: url('assets/img/bg2.jpeg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="brand">
-                        <h1>Julian Hörbst</h1>
-                        <h3>A Badass Bootstrap UI Kit based on Material Design.</h3>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div class="wrapper" style="margin-top: 110px; margin-right: 60px">
 
     <div class="main main-raised card card-nav-tabs">
-        <div class="header header-success">
+        <div class="header" style="background-color: #444028">
             <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
             <div class="nav-tabs-navigation">
                 <div class="nav-tabs-wrapper">
@@ -108,7 +102,7 @@
                                 Profile
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#projects" data-toggle="tab">
                                 <i class="material-icons">face</i>
                                 Projekte
@@ -121,9 +115,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#settings" data-toggle="tab">
+                            <a href="#contact" data-toggle="tab">
                                 <i class="material-icons">build</i>
-                                Settings
+                                Kontakt
                             </a>
                         </li>
                     </ul>
@@ -150,7 +144,7 @@
                                 could be at. </p>
                         </div>
                         <!-- Projects Tab-->
-                        <div class="tab-pane active" id="projects">
+                        <div class="tab-pane" id="projects">
                             <div class="title">
                                 <h2>Über mich</h2>
                             </div>
@@ -228,10 +222,10 @@
                                                         <!-- Wrapper for slides -->
                                                         <div class="carousel-inner">
                                                             <div class="item">
-                                                                <img src="assets/img/bg2.jpeg" alt="Awesome Image">
+                                                                <img src="https://i.imgur.com/cELVBy3.jpg" alt="Awesome Image">
                                                                 <div class="carousel-caption">
                                                                     <h4><i class="material-icons">location_on</i>
-                                                                        Yellowstone National Park, United States
+                                                                        Summerau, Upper Austria
                                                                     </h4>
                                                                 </div>
                                                             </div>
@@ -271,18 +265,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="settings">
-                            <p>I think that’s a responsibility that I have, to push possibilities, to show people,
-                                this
-                                is the level
-                                that things could be at. So when you get something that has the name Kanye West on
-                                it,
-                                it’s supposed
-                                to be pushing the furthest possibilities. I will be the leader of a company that
-                                ends up
-                                being worth
-                                billions of dollars, because I got the answers. I understand culture. I am the
-                                nucleus.</p>
+                        <div class="tab-pane" id="contact">
+                            <?php
+                            $action=$_REQUEST['action'];
+                            if ($action=="")    /* display the contact form */
+                            {
+                                ?>
+                                <form  action="" method="POST" enctype="multipart/form-data">
+                                    <input type="hidden" name="action" value="submit">
+                                    Your name:<br>
+                                    <input name="name" type="text" value="" size="30"/><br>
+                                    Your email:<br>
+                                    <input name="email" type="text" value="" size="30"/><br>
+                                    Your message:<br>
+                                    <textarea name="message" rows="7" cols="30"></textarea><br>
+                                    <input type="submit" value="Send email"/>
+                                </form>
+                                <?php
+                            }
+                            else                /* send the submitted data */
+                            {
+                                $name=$_REQUEST['name'];
+                                $email=$_REQUEST['email'];
+                                $message=$_REQUEST['message'];
+                                if (($name=="")||($email=="")||($message==""))
+                                {
+                                    echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+                                }
+                                else{
+                                    $from="From: $name<$email>\r\nReturn-path: $email";
+                                    $subject="Message sent using your contact form";
+                                    mail("julian.hoerbst@aon.at", $subject, $message, $from);
+                                    echo "Email sent!";
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>

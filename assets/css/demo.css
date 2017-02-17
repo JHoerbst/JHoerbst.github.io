@@ -395,3 +395,68 @@
 .tutorial-page .title{
     color: #FFFFFF;
 }
+
+/*SVG Header  */
+
+header {
+    position: relative;
+    height: 300px;
+    background-image: linear-gradient(#235966, #244666);
+}
+
+h1 {
+    padding: 100px 0;
+    font: 44px "Arial";
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 699px) {
+    .svg--lg {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+    .svg--sm {
+        display: none;
+    }
+}
+/* Scrollbar http://www.hongkiat.com/blog/css-scroll-bar/*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #aaa;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8b8b8b;
+}
+/* Last item of List right aligned http://jsfiddle.net/silb3r/1eyk7pa4/2/ */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+li {
+    float: left;
+}
+li:nth-last-child(1) {
+    float: none;
+    display: inline-block;
+}
