@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2ebf31a-54d5-4357-a0cb-14c55b6dea37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sitemap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/googlee3b21b8e35e738b0.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -288,19 +286,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\hoerbst.website" />
+      <recent name="C:\Users\julia\hoerbst.website\assets\img\nfconnect" />
+      <recent name="C:\Users\julia\hoerbst.website\assets\img" />
+      <recent name="C:\Users\julia\hoerbst.website\assets\img\innotune" />
+      <recent name="C:\Users\julia\hoerbst.website\assets\img\testbench" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\julia\hoerbst.website\assets\img\koena" />
       <recent name="C:\Users\julia\hoerbst.website\assets\img\innotune" />
       <recent name="C:\Users\julia\hoerbst.website\assets\img\testbench" />
       <recent name="C:\Users\julia\hoerbst.website\assets\img\technologys" />
       <recent name="C:\Users\julia\hoerbst.website\assets\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\julia\hoerbst.website\assets\img\nfconnect" />
-      <recent name="C:\Users\julia\hoerbst.website\assets\img" />
-      <recent name="C:\Users\julia\hoerbst.website\assets\img\innotune" />
-      <recent name="C:\Users\julia\hoerbst.website\assets\img\testbench" />
-      <recent name="C:\Users\julia\hoerbst.website\assets\img\koena" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.Xampp">
@@ -385,7 +383,7 @@
       <workItem from="1487837618341" duration="80000" />
       <workItem from="1488354083758" duration="14709000" />
       <workItem from="1488401849815" duration="2601000" />
-      <workItem from="1489043914987" duration="1193000" />
+      <workItem from="1489043914987" duration="1384000" />
     </task>
     <task id="LOCAL-00001" summary="added project tab">
       <created>1487243377509</created>
@@ -422,11 +420,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488376512549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added sitemap.xml">
+      <created>1489046803198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1489046803198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33292000" />
+    <option name="totallyTimeSpent" value="33483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -463,7 +468,8 @@
     <MESSAGE value="changed php to html files" />
     <MESSAGE value="added google analytics" />
     <MESSAGE value="changed project tab&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed project tab&#10;" />
+    <MESSAGE value="added sitemap.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sitemap.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
