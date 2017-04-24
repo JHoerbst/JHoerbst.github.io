@@ -5,9 +5,9 @@
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="google-site-verification" content="kk1o0R28JcBXy1U7Cy--4NQhBxBBdSw4bCXcCUV_6JQ" />
-    <link rel="alternate" href="http://hoerbst.website" hreflang="x-default" />
-    <link rel="alternate" href="http://hoerbst.website" hreflang="de-AT" />
+    <meta name="google-site-verification" content="kk1o0R28JcBXy1U7Cy--4NQhBxBBdSw4bCXcCUV_6JQ"/>
+    <link rel="alternate" href="http://hoerbst.website" hreflang="x-default"/>
+    <link rel="alternate" href="http://hoerbst.website" hreflang="de-AT"/>
     <title>Hoerbst</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
@@ -64,25 +64,19 @@
                     </a>
                 </li>
                 <li>
-                    <a rel="tooltip" title="Follow me on Github" data-placement="bottom"
+                    <a rel="tooltip" title="Github" data-placement="bottom"
                        href="https://github.com/JHoerbst" target="_blank"
                        class="btn btn-white btn-simple btn-just-icon">
                         <i class="fa fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a rel="tooltip" title="Facebook" data-placement="bottom" href="https://www.facebook.com/hiabst"
-                       target="_blank" class="btn btn-white btn-simple btn-just-icon">
-                        <i class="fa fa-facebook-square"></i>
+                    <a rel="tooltip" title="Xing" data-placement="bottom"
+                       href="https://www.xing.com/profile/Julian_Hoerbst" target="_blank"
+                       class="btn btn-white btn-simple btn-just-icon">
+                        <i class="fa fa-xing"></i>
                     </a>
                 </li>
-                <li>
-                    <a rel="tooltip" title="Instagram" data-placement="bottom" href="https://www.instagram.com/hiabst"
-                       target="_blank" class="btn btn-white btn-simple btn-just-icon">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                </li>
-
             </ul>
         </div>
     </div>
@@ -117,8 +111,8 @@
                         </li>
                         <li class="li-right">
                             <a href="#skills" data-toggle="tab">
-                                <i class="material-icons">photo_library</i>
-                                Skillz
+                                <i class="material-icons">school</i>
+                                Skills
                             </a>
                         </li>
                         <li class="li-right">
@@ -387,7 +381,8 @@
                                             <div class="card card-raised card-carousel">
                                                 <div id="carousel-example-generic" class="carousel slide"
                                                      data-ride="carousel">
-                                                    <div style="background-size: cover" class="carousel slide" data-ride="carousel">
+                                                    <div style="background-size: cover" class="carousel slide"
+                                                         data-ride="carousel">
 
                                                         <!-- Indicators -->
                                                         <ol class="carousel-indicators">
@@ -402,7 +397,8 @@
                                                         <!-- Wrapper for slides -->
                                                         <div class="carousel-inner">
                                                             <div class="item">
-                                                                <img style="object-fit: contain" src="https://i.imgur.com/cELVBy3.jpg"
+                                                                <img style="object-fit: contain"
+                                                                     src="https://i.imgur.com/cELVBy3.jpg"
                                                                      alt="Awesome Image">
                                                                 <div class="carousel-caption">
                                                                     <h4><i class="material-icons">location_on</i>
@@ -411,14 +407,16 @@
                                                                 </div>
                                                             </div>
                                                             <div class="item">
-                                                                <img style="object-fit: contain" src="assets/img/bg3.jpeg" alt="Awesome Image">
+                                                                <img style="object-fit: contain"
+                                                                     src="assets/img/bg3.jpeg" alt="Awesome Image">
                                                                 <div class="carousel-caption">
                                                                     <h4><i class="material-icons">location_on</i>
                                                                         Somewhere Beyond, United States</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="item active">
-                                                                <img style="object-fit: contain" src="assets/img/bg4.jpeg" alt="Awesome Image">
+                                                                <img style="object-fit: contain"
+                                                                     src="assets/img/bg4.jpeg" alt="Awesome Image">
                                                                 <div class="carousel-caption">
                                                                     <h4><i class="material-icons">location_on</i>
                                                                         Yellowstone National Park, United States
@@ -447,47 +445,37 @@
                             </div>
                         </div>
                         <div class="tab-pane" id="contact">
-                            <?php
-                            $action=$_REQUEST['action'];
-                            if ($action=="")    /* display the contact form */
-                            {
-                                ?>
-                            <form action="" method="POST" enctype="multipart/form-data">
-                                <input type="hidden" name="action" value="submit">
-                                Your name:<br>
-                                <input name="name" type="text" value="" size="30"/><br>
-                                Your email:<br>
-                                <input name="email" type="text" value="" size="30"/><br>
-                                Your message:<br>
-                                <textarea name="message" rows="7" cols="30"></textarea><br>
-                                <input type="submit" value="Send email"/>
+                            <form method="POST" action="http://formspree.io/julian.hoerbst@aon.at">
+                                <div class="col-sm-4">
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Deine Email Adresse</label>
+                                        <input name="email" required type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <textarea required name="message" class="form-control" placeholder="Deine Nachricht"
+                                              rows="5"></textarea>
+                                    <button type="submit" class="btn btn-default">Senden</button>
+                                </div>
                             </form>
-                            <?php
-                            }
-                            else                /* send the submitted data */
-                            {
-                                $name=$_REQUEST['name'];
-                                $email=$_REQUEST['email'];
-                                $message=$_REQUEST['message'];
-                                if (($name=="")||($email=="")||($message==""))
-                                {
-                                    echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-                            }
-                            else{
-                            $from="From: $name<$email>\r\nReturn-path: $email";
-                            $subject="Message sent using your contact form";
-                            mail("julian.hoerbst@aon.at", $subject, $message, $from);
-                            echo "Email sent!";
-                            }
-                            }
-                            ?>
+
                         </div>
                         <div class="tab-pane" id="skills">
                             <div class="title">
-                                <h2>Über mich</h2>
+                                <h2>Kentnisse und Fähigkeiten</h2>
                             </div>
-
-                            <p>ORACLE SQL zertifikat, java, c#, Android, php, html, css, js, AngularJs, photoshop, git </p>
+                            <ul>
+                                <li>ORACLE SQL Zertifikat</li>
+                                <li>Java</li>
+                                <li>C#</li>
+                                <li>Android</li>
+                                <li>PHP</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>AngularJS</li>
+                                <li>Git</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
