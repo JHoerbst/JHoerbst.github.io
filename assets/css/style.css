@@ -469,3 +469,7 @@ li:nth-last-child(1) {
 .card-project {
     margin-bottom: 20px;
 }
+
+.email-label .text-center{
+    text-align: left;
+}
