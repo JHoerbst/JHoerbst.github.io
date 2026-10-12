@@ -1,539 +1,197 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="google-site-verification" content="kk1o0R28JcBXy1U7Cy--4NQhBxBBdSw4bCXcCUV_6JQ"/>
-    <link rel="alternate" href="http://hoerbst.website" hreflang="x-default"/>
-    <link rel="alternate" href="http://hoerbst.website" hreflang="de-AT"/>
-    <title>Hoerbst</title>
-
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
-
-    <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="assets/css/material-kit.css" rel="stylesheet"/>
-
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="assets/css/style.css" rel="stylesheet"/>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julian Hörbst</title>
+  <meta name="description" content="Servus, ich bin Julian: Software Engineer für Cloud, APIs und Infrastructure as Code. Hier gibt's meine Projekte und ein bisschen was über mich.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0f1720">
+  <link rel="canonical" href="https://jhoerbst.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Julian Hörbst">
+  <meta property="og:description" content="Software Engineer für Cloud, APIs und Infrastructure as Code. Am Wochenende meistens am Berg.">
+  <meta property="og:url" content="https://jhoerbst.github.io/">
+  <meta property="og:locale" content="de_AT">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/martian-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+<body>
+  <header class="top">
+    <a class="mark" href="#" aria-label="Julian Hörbst, zum Seitenanfang">jhoerbst</a>
+    <nav aria-label="Profile">
+      <a href="https://github.com/JHoerbst">GitHub</a>
+      <a href="mailto:julian.hoerbst@gmail.com">E-Mail</a>
+    </nav>
+  </header>
 
-<body class="index-page">
-<header style="margin-top: -20px;">
-    <h1>Julian Hörbst</h1>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon class="svg--sm" fill="#cccccc" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"></polygon>
-        <polygon class="svg--lg" fill="#cccccc"
-                 points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100"></polygon>
-    </svg>
-</header>
-<!-- Navbar -->
-<nav style="background-color: #235466" class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="logo-container">
-                <div class="logo">
-                    <img src="assets/img/logo.png" alt="Julian Hörbst Logo">
-                </div>
-            </div>
+  <main>
+    <section class="hero" aria-labelledby="name">
+      <figure class="portrait">
+        <span class="initials" aria-hidden="true">JH</span>
+        <img src="assets/img/me.jpg" alt="Julian mit Radhelm und Sonnenbrille, macht ein Peace-Zeichen vor einem Sonnenuntergang" width="800" height="800" onerror="this.remove()">
+      </figure>
+
+      <div class="intro">
+        <h1 id="name">Servus, ich bin Julian.</h1>
+        <pre class="hcl"><code><span class="l"><span class="kw">resource</span> <span class="s">"mensch"</span> <span class="s">"julian"</span> {</span>
+<span class="l">  <span class="k">job</span>         = <span class="s">"Software Engineer"</span></span>
+<span class="l">  <span class="k">firma</span>       = <span class="s">"DS Development"</span></span>
+<span class="l">  <span class="k">baut</span>        = [<span class="s">"Cloud"</span>, <span class="s">"APIs"</span>, <span class="s">"IaC"</span>]</span>
+<span class="l">  <span class="k">bastelt</span>     = [<span class="s">"Hardware"</span>, <span class="s">"SBCs"</span>]</span>
+<span class="l">  <span class="k">am_liebsten</span> = <span class="s">"irgendwo am Berg"</span></span>
+<span class="l">  <span class="k">urlaubsreif</span> = <button class="bool" type="button" aria-pressed="true" title="Draufklicken">true</button> <span class="c"># eh immer</span></span>
+<span class="l">}<span class="cursor" aria-hidden="true"></span></span></code></pre>
+      </div>
+    </section>
+
+    <section class="about" aria-label="Über mich">
+      <p>
+        Tagsüber baue ich bei DS Development Cloud-Systeme. Ich entwerfe APIs, schreibe
+        Infrastruktur als Code und schaue, dass das Ganze auch in zwei Jahren noch
+        jemand versteht. Meistens bin das dann eh ich.
+      </p>
+      <p>
+        Nebenbei tüftle ich an eigenen Projekten. Angefangen hat das mit Köna, einem
+        Maturaprojekt an der HTL Leonding. Heute bonieren damit Kellnerinnen und Kellner
+        auf Vereinsfesten in ganz Österreich.
+      </p>
+    </section>
+
+    <section class="projects" aria-labelledby="projekte">
+      <h2 id="projekte">Woran ich baue</h2>
+
+      <article class="feature" aria-labelledby="koena">
+        <img class="feature-img" src="assets/img/koena.jpg" alt="Köna-Tablet mit Logo neben einem Bondrucker, der gerade einen Bon druckt" width="1600" height="920" loading="lazy">
+
+        <div class="feature-body">
+          <div class="feature-head">
+            <h3 id="koena"><img class="logo" src="assets/img/logos/koena.png" alt="" width="96" height="96">Köna</h3>
+            <a class="project-link" href="https://koena.at">koena.at</a>
+          </div>
+          <p class="feature-lead">
+            Mein größtes Projekt und ein bisschen mein zweiter Job. Köna ist das Boniersystem
+            für Vereinsfeste: Bestellt wird am Handy, die Bons kommen sofort an Schank und
+            Küche raus, auch wenn's im Festzelt kein Internet gibt. Und ich mache dort so
+            ziemlich alles, was dazugehört.
+          </p>
+
+          <dl class="facts">
+            <div><dt>Feste seit 2017</dt><dd>1.000+</dd></div>
+            <div><dt>Orte in Österreich</dt><dd>350+</dd></div>
+            <div><dt>Maturaprojekt an der HTL Leonding</dt><dd>2016</dd></div>
+          </dl>
+
+          <ul class="roles">
+            <li><h4>Software</h4><p>Server und Cloud-Backend, Control Panel, Lizenzverwaltung und der Installer für die Hardware vor Ort.</p></li>
+            <li><h4>Hardware</h4><p>Handys, Bondrucker und Netzwerk bestellen, einrichten und fertig in den Koffer packen.</p></li>
+            <li><h4>Vor Ort</h4><p>Kunden betreuen und auf den Festen dabei sein, wenn's drauf ankommt.</p></li>
+            <li><h4>Drumherum</h4><p>Support, Website, Social Media und alles andere, was halt anfällt.</p></li>
+          </ul>
+
+          <ul class="stack" aria-label="Technik">
+            <li>Java</li><li>Spring Boot</li><li>Quarkus</li><li>AWS CDK</li><li>Lambda</li><li>DynamoDB</li><li>PostgreSQL</li><li>React</li>
+          </ul>
         </div>
+      </article>
 
-        <div class="collapse navbar-collapse" id="navigation-index">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a rel="tooltip" title="Stackoverflow" data-placement="bottom"
-                       href="http://stackoverflow.com/users/4961522/hiabst" target="_blank"
-                       class="btn btn-white btn-simple btn-just-icon">
-                        <i class="fa fa-stack-overflow"></i>
-                    </a>
-                </li>
-                <li>
-                    <a rel="tooltip" title="Github" data-placement="bottom"
-                       href="https://github.com/JHoerbst" target="_blank"
-                       class="btn btn-white btn-simple btn-just-icon">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a rel="tooltip" title="Xing" data-placement="bottom"
-                       href="https://www.xing.com/profile/Julian_Hoerbst" target="_blank"
-                       class="btn btn-white btn-simple btn-just-icon">
-                        <i class="fa fa-xing"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- End Navbar -->
+      <ul class="project-list">
 
-<div class="wrapper" style="margin-top: 110px; margin-right: 60px">
+        <li class="project">
+          <div class="project-head">
+            <h3><img class="logo" src="assets/img/logos/eventgalerie.svg" alt="" width="96" height="96">Eventgalerie</h3>
+            <span class="status">kommt bald</span>
+          </div>
+          <p>
+            Damit die Hochzeitsfotos nicht in zwanzig WhatsApp-Gruppen verstreut landen:
+            Gäste scannen den QR-Code am Tisch, laden ohne Login hoch und sehen sofort
+            alle Bilder. Gebaut für eine Hochzeit, bald für alle Feiern.
+          </p>
+          <ul class="stack" aria-label="Technik">
+            <li>TypeScript</li><li>React</li><li>Vite</li><li>AWS Amplify</li><li>Lambda</li><li>S3</li><li>Cognito</li><li>Astro</li>
+          </ul>
+        </li>
 
-    <div class="main main-raised card card-nav-tabs">
-        <div class="header" style="background-color: #22735c">
-            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-            <div class="nav-tabs-navigation">
-                <div class="nav-tabs-wrapper">
-                    <ul class="nav nav-tabs ul-right" data-tabs="tabs">
-                        <li class="active li-right">
-                            <a href="#profile" data-toggle="tab">
-                                <i class="material-icons">face</i>
-                                Profil
-                            </a>
-                        </li>
-                        <li class="li-right">
-                            <a href="#projects" data-toggle="tab">
-                                <i class="material-icons">web</i>
-                                Projekte
-                            </a>
-                        </li>
-                        <li class="li-right">
-                            <a href="#gallery" data-toggle="tab">
-                                <i class="material-icons">photo_library</i>
-                                Gallerie
-                            </a>
-                        </li>
-                        <li class="li-right">
-                            <a href="#skills" data-toggle="tab">
-                                <i class="material-icons">school</i>
-                                Skills
-                            </a>
-                        </li>
-                        <li class="li-right">
-                            <a href="#contact" data-toggle="tab">
-                                <i class="material-icons">contact_mail</i>
-                                Kontakt
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section section-basic">
-            <div class="container">
-                <div class="content">
-                    <div class="tab-content text-center">
-                        <div class="tab-pane active" id="profile">
-                            <div class="title">
-                                <h2>Über mich</h2>
-                            </div>
-                            <img class="col-md-4" src="assets/img/Schulfoto.jpg">
-                            <br><br><br>
-                            <p class="col-md-8" style="font-size: large">Willkommen zu meiner Website.<br> Ich bin angehender Maturant der Schule HTL Leonding.
-                                Im Informatikzweig wird von Programmiersprachen, Organisationsmethoden bis hin zu Netzwerktechnik alles gelernt.
-                            Meine Persönlichen Interessen sind, sich mit Hardware zu beschäftigen, Programmieren, Fotografie und Musik.
-                                Du findest in den nächtsten Seiten meine umgesetzten Projekte, eine Gallerie, meine Fähigkeiten und noch ein Kontaktformular.
-                            Ich würde mich sehr über Rückmeldungen zur Website oder Generell Fragen freuen!</p>
-                        </div>
-                        <!-- Projects Tab-->
-                        <div class="tab-pane" id="projects">
-                            <div class="title">
-                                <h2>Meine Projekte</h2>
-                            </div>
-                            <!--Köna2.16-->
-                            <div class="col-md-6">
-                                <div class="card card-project">
-                                    <div class="title">
-                                        <h2>Köna2.16</h2>
-                                    </div>
-                                    <div class="content">
-                                        <div class="tab-content text-center">
-                                            <strong>Das mobile Boniersystem für ihre Veranstaltungen.</strong>
-                                            <p>Köna2.16 bietet ein modulares Web-Interface zur Verwaltung von
-                                                Veranstaltungen und eine App für die namensgebenenen <i>"Köna"</i>. Zwei
-                                                Bondrucker stehen zur Verfügung um die Bestellungen auszudrucken, sodass
-                                                die Kunden sofort die gewünschten Produkte erhalten.</p>
-                                        </div>
-                                        <div class="card card-raised card-carousel" style="box-shadow: none">
-                                            <div id="koenacarousel" class="carousel slide"
-                                                 data-ride="carousel">
-                                                <div class="carousel slide" data-ride="carousel">
+        <li class="project">
+          <div class="project-head">
+            <h3><img class="logo" src="assets/img/logos/pachinger.png" alt="" width="96" height="96">Tischlerei Pachinger</h3>
+            <a class="project-link" href="https://tischlerei-pachinger.at">tischlerei-pachinger.at</a>
+          </div>
+          <p>
+            Neue Website für eine Tischlerei im Mühlviertel. Schnell, ohne Cookies und
+            ohne Tracking, so wie Websites eigentlich sein sollten.
+          </p>
+          <ul class="stack" aria-label="Technik">
+            <li>Astro</li><li>TypeScript</li>
+          </ul>
+        </li>
 
-                                                    <!-- Indicators -->
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#koenacarousel"
-                                                            data-slide-to="0" class=""></li>
-                                                        <li data-target="#koenacarousel"
-                                                            data-slide-to="1" class=""></li>
-                                                        <li data-target="#koenacarousel"
-                                                            data-slide-to="2" class="active"></li>
-                                                    </ol>
+        <li class="project">
+          <div class="project-head">
+            <h3><img class="logo" src="assets/img/logos/innotune.png" alt="" width="96" height="96">InnoTune</h3>
+            <a class="project-link" href="https://www.innotune.at/">innotune.at</a>
+          </div>
+          <p>
+            Musik in jedem Raum, gesteuert per App, Taster oder über Loxone, und das alles
+            auf kleinen Linux-Boards. Ich habe die Konfigurationsseite InnoControl neu gebaut
+            und die Multiroom-Software weiterentwickelt, unter anderem Line-in, Sprachausgabe
+            und Support fürs Tinker Board.
+          </p>
+          <ul class="stack" aria-label="Technik">
+            <li>PHP</li><li>AngularJS</li><li>JavaScript</li><li>Bash</li><li>Linux</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-                                                    <!-- Wrapper for slides -->
-                                                    <div class="carousel-inner">
-                                                        <div class="item">
-                                                            <img src="assets/img/koena/website_uebersicht.PNG"
-                                                                 alt="Awesome Image">
-                                                        </div>
-                                                        <div class="item">
-                                                            <img src="assets/img/koena/website_edit.PNG"
-                                                                 alt="Awesome Image">
-                                                        </div>
-                                                        <div class="item active">
-                                                            <img src="assets/img/koena/koenapp.png" alt="Awesome Image">
-                                                        </div>
-                                                    </div>
+    <section class="offline" aria-labelledby="offline">
+      <h2 id="offline">Abseits vom Bildschirm</h2>
 
-                                                    <!-- Controls -->
-                                                    <a class="left carousel-control"
-                                                       href="#koenacarousel" data-slide="prev">
-                                                        <i class="material-icons">keyboard_arrow_left</i>
-                                                    </a>
-                                                    <a class="right carousel-control"
-                                                       href="#koenacarousel" data-slide="next">
-                                                        <i class="material-icons">keyboard_arrow_right</i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bottom">
-                                            <hr>
-                                            <i class="devicon-android-plain colored icon-big"></i>
-                                            <i class="devicon-java-plain colored icon-big"></i>
-                                            <i class="devicon-bitbucket-plain colored icon-big"></i>
-                                            <i class="devicon-sass-original colored icon-big"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--InnoTune-->
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="title">
-                                        <img src="assets/img/innotune/InnoTuneklein.png" style="width: 60%">
-                                    </div>
-                                    <div class="content">
-                                        <div class="tab-content text-center">
-                                            <strong>Die flexible Multiroom Audio Lösung</strong>
-                                            <p>Mit InnoTune beschallen Sie einfach und kostengünstig alle Räume in Ihrer
-                                                Wohnung bzw. Ihrem Haus. Die Steuerung erfolgt per App, per Taster oder
-                                                auch automatisiert durch bestimmte Ereignisse. Spielen Sie ganz einfach
-                                                Musik von Ihrer lokalen Bibliothek, Internet-Radio, direkt vom
-                                                Smartphone oder auch Online-Quellen wie Spotify. InnoTune bietet
-                                                einzigartige Flexibilität im Bereich Multiroom-Audio besonders in
-                                                Kombination mit einer Haussteuerung wie Loxone.</p>
-                                        </div>
-                                        <div class="card card-raised card-carousel" style="box-shadow: none">
-                                            <div id="innotunecarousel" class="carousel slide"
-                                                 data-ride="carousel">
-                                                <div class="carousel slide" data-ride="carousel">
+      <ul class="hobby-list">
+        <li class="hobby hobby-berg">
+          <svg viewBox="0 0 48 32" aria-hidden="true"><path d="M2 30 L17 8 L24 18 L31 10 L46 30 Z"/><path d="M14 12.5 L17 8 L20 12.5"/></svg>
+          <h3>Berge &amp; Wandern</h3>
+          <p>Am Wochenende eher auf einem Gipfel als am Schreibtisch. Hauptsache rauf.</p>
+        </li>
+        <li class="hobby hobby-chip">
+          <svg viewBox="0 0 48 32" aria-hidden="true"><rect x="14" y="6" width="20" height="20" rx="2"/><path d="M19 6 V2 M24 6 V2 M29 6 V2 M19 26 V30 M24 26 V30 M29 26 V30 M14 11 H10 M14 16 H10 M14 21 H10 M34 11 H38 M34 16 H38 M34 21 H38"/></svg>
+          <h3>Hardware &amp; Einplatinenrechner</h3>
+          <p>Kleine Rechner, große Pläne. Irgendwas wird immer gerade geflasht oder umgebaut.</p>
+        </li>
+        <li class="hobby hobby-reise">
+          <svg viewBox="0 0 48 32" aria-hidden="true"><rect x="10" y="9" width="28" height="20" rx="3"/><path d="M19 9 V5 H29 V9 M18 9 V29 M30 9 V29"/></svg>
+          <h3>Unterwegs sein</h3>
+          <p>Neue Orte, gutes Essen, möglichst wenig Plan. Ab und zu muss man einfach weg.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-                                                    <!-- Indicators -->
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#innotunecarousel"
-                                                            data-slide-to="0" class=""></li>
-                                                        <li data-target="#innotunecarousel"
-                                                            data-slide-to="1" class=""></li>
-                                                        <li data-target="#innotunecarousel"
-                                                            data-slide-to="2" class="active"></li>
-                                                    </ol>
+  <footer class="contact" aria-labelledby="kontakt">
+    <h2 id="kontakt">Sag Servus</h2>
+    <p>Ein Projekt, eine Frage oder ein guter Wandertipp? Schreib mir:</p>
+    <a class="mail" href="mailto:julian.hoerbst@gmail.com">julian.hoerbst@gmail.com</a>
+    <p class="fine">
+      Von Hand gebaut mit HTML und CSS. Keine Cookies, kein Tracking.
+    </p>
+    <p class="legal">
+      Offenlegung gemäß § 25 MedienG: Julian Hörbst, Freistadt. Persönliche Website.
+    </p>
+  </footer>
 
-                                                    <!-- Wrapper for slides -->
-                                                    <div class="carousel-inner">
-                                                        <div class="item ">
-                                                            <img src="assets/img/innotune/website.PNG"
-                                                                 alt="InnoControl Website">
-                                                        </div>
-                                                        <div class="item">
-                                                            <img src="assets/img/innotune/website.PNG"
-                                                                 alt="InnoControl Website">
-                                                        </div>
-                                                        <div class="item active">
-                                                            <img src="assets/img/innotune/PlayStoreImage.png"
-                                                                 alt="Play Store Image">
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Controls -->
-                                                    <a class="left carousel-control"
-                                                       href="#innotunecarousel" data-slide="prev">
-                                                        <i class="material-icons">keyboard_arrow_left</i>
-                                                    </a>
-                                                    <a class="right carousel-control"
-                                                       href="#innotunecarousel" data-slide="next">
-                                                        <i class="material-icons">keyboard_arrow_right</i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bottom">
-                                            <hr>
-                                            <i class="devicon-android-plain colored icon-big"></i>
-                                            <i class="devicon-php-plain colored icon-big"></i>
-                                            <i class="devicon-jetbrains-plain icon-big"></i>
-                                            <i class="devicon-bitbucket-plain colored icon-big"></i><br>
-                                            <a href="http://www.innotune.at/">InnoTune Homepage</a><br>
-                                            <a href="https://play.google.com/store/apps/details?id=at.innotune.innoplay">InnoPlay
-                                                App im Play Market</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--NFConnect-->
-                            <div class="col-md-6">
-                                <div class="card card-project">
-                                    <div class="title">
-                                        <h2>NFConnect</h2>
-                                    </div>
-                                    <div class="content">
-                                        <div class="tab-content text-center">
-                                            <strong>Touch. Share. Connect.</strong>
-                                            <p>Mit NFConnect kann man seine Kontaktdaten einfach über Knopfdruck am
-                                                Smartphone an ein anderes Smartphone mit NFC senden. Mit der Responsiven
-                                                Weboberfläche kann man seine Kontaktdaten verändern und die
-                                                verschiedenen Visitenkarten verwalten. </p>
-                                        </div>
-                                        <div class="bottom">
-                                            <hr>
-                                            <i class="devicon-android-plain colored icon-big"></i>
-                                            <i class="devicon-java-plain colored icon-big"></i>
-                                            <i class="devicon-angularjs-plain colored icon-big"></i>
-                                            <i class="devicon-trello-plain colored icon-big"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Testbench-->
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="title">
-                                        <h3>Testbench</h3>
-                                    </div>
-                                    <div class="content">
-                                        <div class="tab-content text-center">
-                                            <strong>Do it yourself Testbench</strong>
-                                            <p>Die selbstgemachte Testbench ist sehr nützlich für das testen von
-                                                Hardware, Linux Mint wurde als OS gewählt.</p>
-                                        </div>
-                                        <div class="card card-raised card-carousel" style="box-shadow: none">
-                                            <div id="testbenchcarousel" class="carousel slide"
-                                                 data-ride="carousel">
-                                                <div class="carousel slide" data-ride="carousel">
-
-                                                    <!-- Indicators -->
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#testbenchcarousel"
-                                                            data-slide-to="0" class=""></li>
-                                                        <li data-target="#testbenchcarousel"
-                                                            data-slide-to="1" class=""></li>
-                                                        <li data-target="#testbenchcarousel"
-                                                            data-slide-to="2" class="active"></li>
-                                                    </ol>
-
-                                                    <!-- Wrapper for slides -->
-                                                    <div class="carousel-inner">
-                                                        <div class="item ">
-                                                            <img src="assets/img/testbench/testbench2.jpg"
-                                                                 alt="Awesome Image">
-                                                        </div>
-                                                        <div class="item">
-                                                            <img src="assets/img/testbench/testbench3.jpg"
-                                                                 alt="Awesome Image">
-                                                        </div>
-                                                        <div class="item active">
-                                                            <img src="assets/img/testbench/testbench1.png"
-                                                                 alt="Awesome Image">
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Controls -->
-                                                    <a class="left carousel-control"
-                                                       href="#testbenchcarousel" data-slide="prev">
-                                                        <i class="material-icons">keyboard_arrow_left</i>
-                                                    </a>
-                                                    <a class="right carousel-control"
-                                                       href="#testbenchcarousel" data-slide="next">
-                                                        <i class="material-icons">keyboard_arrow_right</i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bottom">
-                                            <hr>
-                                            <i class="devicon-linux-plain icon-big"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="gallery">
-                            <div class="title">
-                                <h2>Gallery</h2>
-                            </div>
-                            <div class="section" id="carousel">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-8 col-md-offset-2">
-
-                                            <!-- Carousel Card -->
-                                            <div class="card card-raised card-carousel">
-                                                <div id="carousel-example-generic" class="carousel slide"
-                                                     data-ride="carousel">
-                                                    <div style="background-size: cover" class="carousel slide"
-                                                         data-ride="carousel">
-
-                                                        <!-- Indicators -->
-                                                        <ol class="carousel-indicators">
-                                                            <li data-target="#carousel-example-generic"
-                                                                data-slide-to="0" class=""></li>
-                                                            <li data-target="#carousel-example-generic"
-                                                                data-slide-to="1" class=""></li>
-                                                            <li data-target="#carousel-example-generic"
-                                                                data-slide-to="2" class="active"></li>
-                                                        </ol>
-
-                                                        <!-- Wrapper for slides -->
-                                                        <div class="carousel-inner">
-                                                            <div class="item">
-                                                                <img style="object-fit: contain"
-                                                                     src="https://i.imgur.com/cELVBy3.jpg"
-                                                                     alt="Awesome Image">
-                                                                <div class="carousel-caption">
-                                                                    <h4><i class="material-icons">location_on</i>
-                                                                        Summerau, Upper Austria
-                                                                    </h4>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <img style="object-fit: contain"
-                                                                     src="assets/img/bg3.jpeg" alt="Awesome Image">
-                                                                <div class="carousel-caption">
-                                                                    <h4><i class="material-icons">location_on</i>
-                                                                        Somewhere Beyond, United States</h4>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item active">
-                                                                <img style="object-fit: contain"
-                                                                     src="assets/img/bg4.jpeg" alt="Awesome Image">
-                                                                <div class="carousel-caption">
-                                                                    <h4><i class="material-icons">location_on</i>
-                                                                        Yellowstone National Park, United States
-                                                                    </h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Controls -->
-                                                        <a class="left carousel-control"
-                                                           href="#carousel-example-generic" data-slide="prev">
-                                                            <i class="material-icons">keyboard_arrow_left</i>
-                                                        </a>
-                                                        <a class="right carousel-control"
-                                                           href="#carousel-example-generic" data-slide="next">
-                                                            <i class="material-icons">keyboard_arrow_right</i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Carousel Card -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="contact">
-                            <div class="col-sm-6">
-                                <h3>Setze dich in Verbindung!</h3>
-                                julian.hoerbst@aon.at oder auf <a href="https://www.facebook.com/hiabst">Facebook.</a>
-                            </div>
-                            <form class="col-sm-6" method="POST" action="http://formspree.io/julian.hoerbst@aon.at">
-                                    <div class="form-group label-floating">
-                                        <label class="control-label email-label" >Deine Email Adresse</label>
-                                        <input name="email" required type="email" class="form-control">
-                                    </div>
-                                    <textarea required name="message" class="form-control" placeholder="Deine Nachricht"
-                                              rows="5"></textarea>
-                                    <button type="submit" class="btn btn-default">Senden</button>
-                            </form>
-
-                        </div>
-                        <div class="tab-pane" id="skills">
-                            <div class="title">
-                                <h2>Kentnisse und Fähigkeiten</h2>
-                            </div>
-                            <ul>
-                                <li>ORACLE SQL Zertifikat</li>
-                                <li>Java</li>
-                                <li>C#</li>
-                                <li>Android</li>
-                                <li>PHP</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>AngularJS</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <nav class="pull-left">
-                <ul>
-                    <li>
-                        <a href="http://www.creative-tim.com">
-                            Material Kit
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright pull-right">
-                &copy; 2017, Julian Hörbst
-            </div>
-        </div>
-    </footer>
-</div>
+  <script>
+    // Kleines Easter Egg: urlaubsreif umschalten.
+    document.querySelectorAll('.bool').forEach((btn) => {
+      const comment = btn.nextElementSibling;
+      btn.addEventListener('click', () => {
+        const on = btn.getAttribute('aria-pressed') !== 'true';
+        btn.setAttribute('aria-pressed', on);
+        btn.textContent = on ? 'true' : 'false';
+        comment.textContent = on ? '# eh immer' : '# netter Versuch';
+      });
+    });
+  </script>
 </body>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-78255411-2', 'auto');
-    ga('send', 'pageview');
-
-    function _calculateAge(birthday) { // birthday is a date
-        var ageDifMs = Date.now() - birthday.getTime();
-        var ageDate = new Date(ageDifMs); // miliseconds from epoch
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-    }
-</script>
-<!--   Core JS Files   -->
-<script src="assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/js/material.min.js"></script>
-<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
-
-<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-<script src="assets/js/material-kit.js" type="text/javascript"></script>
 </html>
