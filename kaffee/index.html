@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaffee · Julian Hörbst</title>
+  <meta name="description" content="Mein Kaffee-Setup, meine Lieblingsbohne und wie ich ihn am liebsten trinke. Ohne Waage, nach Gefühl.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#b8946a">
+  <link rel="canonical" href="https://jhoerbst.github.io/kaffee/">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/archivo-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/martian-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="kaffee.css">
+  <link rel="stylesheet" href="../assets/nav.css">
+</head>
+<body style="--nav-fg: var(--tinte)">
+  <!-- Druckfarbe der Stempel: leicht ausgefranst -->
+  <svg class="defs" aria-hidden="true" focusable="false">
+    <filter id="tinte" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="rauschen"/>
+      <feDisplacementMap in="SourceGraphic" in2="rauschen" scale="1.6" result="kante"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.35" numOctaves="2" seed="8" result="flecken"/>
+      <feColorMatrix in="flecken" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.75" result="maske"/>
+      <feComposite in="kante" in2="maske" operator="in"/>
+    </filter>
+  </svg>
+
+  <header>
+    <nav class="sitenav" aria-label="Seiten">
+      <a class="sitenav-logo" href="../">jhoerbst</a>
+      <ul>
+        <li><a href="../">Start</a></li>
+        <li><a href="../reisen/">Reisen</a></li>
+        <li><a href="../camper/">Pajero</a></li>
+        <li><a href="../kaffee/" aria-current="page">Kaffee</a></li>
+        <li><a href="../gipfel/">Gipfel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero: das Etikett der Hausmischung -->
+    <section class="hero" aria-labelledby="titel">
+      <div class="etikett">
+        <p class="charge">Charge Nr. 01 · Freistadt</p>
+        <h1 id="titel">Kaffee</h1>
+        <p class="untertitel">bei Julian, nach Gefühl gebrüht</p>
+        <dl class="etikett-daten">
+          <div><dt>Zubereitung</dt><dd>Siebträger, French Press, Mokka</dd></div>
+          <div><dt>Am liebsten</dt><dd>Flat White oder Espresso</dd></div>
+          <div><dt>Bohne</dt><dd>Süssmund Bio Nocciola</dd></div>
+          <div><dt>Menge</dt><dd>nach Gefühl</dd></div>
+          <div><dt>Brühzeit</dt><dd>wenn's passt</dd></div>
+          <div><dt>Waage</dt><dd>keine</dd></div>
+        </dl>
+        <svg class="stempel" viewBox="0 0 200 200" aria-hidden="true">
+          <g class="druck">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="6"/>
+            <circle cx="100" cy="100" r="74" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path id="bogen-o" d="M24,100 A76,76 0 0 1 176,100" fill="none"/>
+            <path id="bogen-u" d="M12,100 A88,88 0 0 0 188,100" fill="none"/>
+            <text font-size="15" font-weight="700" letter-spacing="3"><textPath href="#bogen-o" startOffset="50%" text-anchor="middle">GEPRÜFT · OHNE WAAGE</textPath></text>
+            <text font-size="14" font-weight="700" letter-spacing="3"><textPath href="#bogen-u" startOffset="50%" text-anchor="middle">SEIT JEHER</textPath></text>
+            <text x="100" y="112" text-anchor="middle" font-size="34" font-weight="900" style="font-stretch:70%">FREESTYLE</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Lieblingsbohne -->
+    <section class="bohne" aria-labelledby="bohne-titel">
+      <h2 id="bohne-titel">Meine Lieblingsbohne</h2>
+      <article class="bohnen-etikett">
+        <header>
+          <p class="roester">Süssmund · Wien</p>
+          <h3>Bio Nocciola</h3>
+          <p class="art">Espresso-Mischung, Bio</p>
+        </header>
+        <dl class="bohnen-daten">
+          <div class="herkunft">
+            <dt>Herkunft</dt>
+            <dd>
+              <span class="balken" aria-hidden="true"><span style="width:70%"></span><span style="width:30%"></span></span>
+              <span class="herkunft-text"><span>Mexiko 70 %</span><span>Indien 30 %</span></span>
+            </dd>
+          </div>
+          <div>
+            <dt>Schmeckt nach</dt>
+            <dd>
+              <ul class="noten">
+                <li>geröstete Haselnuss</li>
+                <li>Marzipan</li>
+                <li>Kakao</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Passt für</dt>
+            <dd>Siebträger und Mokkakanne</dd>
+          </div>
+        </dl>
+        <p class="quelle">Angaben laut Röster. <a href="https://suessmund-kaffee.com/">suessmund-kaffee.com</a></p>
+      </article>
+    </section>
+
+    <!-- Am liebsten -->
+    <section class="liebling" aria-labelledby="liebling-titel">
+      <h2 id="liebling-titel">Am liebsten</h2>
+      <ul class="tassen">
+        <li>
+          <button type="button" class="tassen-knopf" data-tasse="flatwhite" aria-label="Flat White eingießen">
+          <svg viewBox="0 0 120 100" aria-hidden="true" overflow="visible">
+            <path class="strahl" d="M55,-6 V32"/>
+            <path class="tasse" d="M18,30 H92 V58 Q92,86 55,86 Q18,86 18,58 Z"/>
+            <path class="henkel" d="M92,38 Q110,38 110,52 Q110,66 92,66"/>
+            <ellipse class="milch" cx="55" cy="32" rx="35" ry="6"/>
+            <path class="latte" d="M55,38 C49,32 43,33 45,29 C47,26 52,28 55,31 C58,28 63,26 65,29 C67,33 61,32 55,38 Z"/>
+            <ellipse class="untertasse" cx="55" cy="90" rx="46" ry="6"/>
+          </svg>
+          </button>
+          <h3>Flat White</h3>
+          <p>Doppelter Espresso, wenig samtige Milch. Das Standardprogramm.</p>
+        </li>
+        <li>
+          <button type="button" class="tassen-knopf" data-tasse="espresso" aria-label="Espresso ziehen">
+          <svg viewBox="0 0 120 100" aria-hidden="true" overflow="visible">
+            <path class="strahl strahl-duenn" d="M55,18 V46 M59,18 V46"/>
+            <path class="tasse" d="M36,46 H78 V62 Q78,82 57,82 Q36,82 36,62 Z"/>
+            <path class="henkel" d="M78,52 Q90,52 90,60 Q90,68 78,68"/>
+            <ellipse class="crema" cx="57" cy="47" rx="20" ry="4"/>
+            <ellipse class="untertasse" cx="57" cy="86" rx="32" ry="5"/>
+          </svg>
+          </button>
+          <h3>Espresso</h3>
+          <p>Pur, wenn's schnell gehen muss oder die Bohne es verdient.</p>
+        </li>
+      </ul>
+      <p class="hinweis tassen-tipp">Klick auf eine Tasse, dann wird frisch eingeschenkt.</p>
+
+      <div class="zaehler" id="zaehler">
+        <p class="zaehler-titel">Heute schon getrunken</p>
+        <div class="zaehler-tassen" id="zaehler-tassen" aria-live="polite"></div>
+        <p class="zaehler-text" id="zaehler-text"></p>
+        <div class="zaehler-knoepfe">
+          <button type="button" id="plus-tasse">Noch eine Tasse</button>
+          <button type="button" id="reset-tasse" class="leise">Zurücksetzen</button>
+        </div>
+        <p class="zaehler-hinweis">Wird nur in deinem Browser gespeichert und setzt sich jeden Tag zurück.</p>
+      </div>
+    </section>
+
+    <!-- Setup -->
+    <section class="setup" aria-labelledby="setup-titel">
+      <h2 id="setup-titel">Mein Setup</h2>
+      <p class="hinweis setup-tipp">Fahr mit der Maus über ein Gerät oder tipp drauf.</p>
+      <ul class="setup-list">
+        <li>
+          <svg class="zeichnung" viewBox="0 0 80 80" aria-hidden="true" overflow="visible"><rect x="12" y="12" width="56" height="46" rx="3"/><rect class="dunkel" x="16" y="8" width="48" height="4" rx="1"/><circle cx="26" cy="24" r="6"/><path d="M26 24 L29 21"/><rect x="34" y="20" width="12" height="16" rx="2"/><path d="M40 20 V12"/><circle class="dunkel" cx="40" cy="11" r="2.5"/><rect class="dunkel" x="32" y="36" width="16" height="5" rx="1"/><path d="M48 39 H64"/><path class="strich" d="M60 26 L63 52"/><rect x="34" y="48" width="12" height="9" rx="2"/><circle class="tropfen" cx="40" cy="43" r="1.6"/><rect x="8" y="60" width="64" height="8" rx="2"/></svg>
+          <p class="rolle">Siebträger</p>
+          <h3>Futura Kikka E61</h3>
+          <p>Zweikreiser mit E61-Brühgruppe. Macht die Flat Whites.</p>
+        </li>
+        <li>
+          <svg class="zeichnung" viewBox="0 0 80 80" aria-hidden="true" overflow="visible"><g class="ruettel"><path d="M27 8 H53 L48 24 H32 Z"/><rect x="26" y="24" width="28" height="36" rx="4"/><circle cx="40" cy="38" r="6"/><path d="M40 38 L43 35"/><rect class="dunkel" x="37" y="52" width="6" height="6" rx="1"/></g><circle class="pulver p1" cx="39" cy="59" r="1.2"/><circle class="pulver p2" cx="41" cy="59" r="1.2"/><rect x="22" y="62" width="36" height="8" rx="2"/></svg>
+          <p class="rolle">Mühle für Espresso</p>
+          <h3>Eureka Mignon Specialità 16CR</h3>
+          <p>Steht direkt neben der Maschine und ist morgens das Lauteste in der Küche.</p>
+        </li>
+        <li>
+          <svg class="zeichnung" viewBox="0 0 80 80" aria-hidden="true" overflow="visible"><rect x="31" y="22" width="18" height="48" rx="4"/><path d="M31 34 H49 M31 58 H49"/><rect class="dunkel" x="33" y="16" width="14" height="6" rx="1"/><path class="strich" d="M40 16 V10"/><g class="kurbel"><path class="strich" d="M40 10 L64 6"/><circle class="dunkel" cx="65" cy="9" r="4"/></g></svg>
+          <p class="rolle">Handmühle</p>
+          <h3>Timemore Chestnut C5 ESP Pro</h3>
+          <p>Für French Press und Mokka zu Hause.</p>
+        </li>
+        <li>
+          <svg class="zeichnung" viewBox="0 0 80 80" aria-hidden="true" overflow="visible"><path class="glas" d="M27 46 H53 V66 Q53 70 49 70 H31 Q27 70 27 66 Z"/><path d="M27 54 H53"/><rect x="30" y="26" width="20" height="20" rx="3"/><rect class="dunkel" x="33" y="20" width="14" height="6" rx="1"/><path class="strich" d="M40 20 V14"/><g class="kurbel"><path class="strich" d="M40 14 L64 10"/><circle class="dunkel" cx="65" cy="13" r="4"/></g></svg>
+          <p class="rolle">Handmühle unterwegs</p>
+          <h3>Hario Skerton Plus</h3>
+          <p>Fährt im <a href="../camper/">Pajero</a> mit, für Kaffee am Stellplatz.</p>
+        </li>
+        <li>
+          <svg class="zeichnung" viewBox="0 0 80 80" aria-hidden="true" overflow="visible"><path class="dampf d1" d="M20 14 Q16 9 20 5 Q24 1 20 -3"/><path class="dampf d2" d="M26 12 Q22 7 26 3 Q30 -1 26 -5"/><path d="M28 70 H52 L49 47 H31 Z"/><path d="M30 45 H50 L53 20 H27 Z"/><path d="M27 20 L20 17 L28 27"/><rect class="dunkel" x="37" y="13" width="6" height="5" rx="1"/><path d="M27 20 H53"/><path class="dunkel-strich" d="M52 24 Q63 25 62 32 L59 42 H50"/></svg>
+          <p class="rolle">Mokkakanne</p>
+          <h3>Bialetti Venus, 2 Tassen</h3>
+          <p>Edelstahl, geht auch auf Induktion.</p>
+        </li>
+        <li>
+          <svg class="zeichnung" viewBox="0 0 80 80" aria-hidden="true" overflow="visible"><rect class="glas" x="26" y="22" width="26" height="46" rx="2"/><path class="kaffee" d="M27 44 H51 V66 H27 Z"/><g class="kolben"><path class="strich" d="M39 6 V24"/><path class="sieb" d="M28 24 H50"/><circle class="dunkel" cx="39" cy="5" r="3"/></g><rect x="24" y="16" width="30" height="6" rx="1"/><path d="M52 28 Q64 28 64 40 Q64 52 52 52"/><rect x="24" y="66" width="30" height="4" rx="1"/></svg>
+          <p class="rolle">French Press</p>
+          <h3>Herkunft unbekannt</h3>
+          <p>Irgendwann im Urlaub gekauft. Tut, was sie soll.</p>
+        </li>
+        <li>
+          <svg class="zeichnung" viewBox="0 0 80 80" aria-hidden="true" overflow="visible"><g class="tamper"><ellipse cx="40" cy="26" rx="11" ry="13"/><rect x="36" y="38" width="8" height="14" rx="1"/><rect class="dunkel" x="24" y="52" width="32" height="12" rx="3"/></g><path d="M22 70 H58"/></svg>
+          <p class="rolle">Zubehör</p>
+          <h3>Normcore</h3>
+          <p>Tamper, Verteiler und der Rest kommen alle von Normcore.</p>
+        </li>
+      </ul>
+      <ul class="fotos" id="setup-fotos" hidden></ul>
+    </section>
+
+    <!-- Zubereitungen -->
+    <section class="methoden" aria-labelledby="methoden-titel">
+      <h2 id="methoden-titel">So wird gebrüht</h2>
+      <ul class="methoden-list">
+        <li class="methode">Siebträger</li>
+        <li class="methode">French Press</li>
+        <li class="methode">Mokka</li>
+        <li class="methode bald">Pour-over<span>als Nächstes</span></li>
+      </ul>
+      <div class="rezept" id="rezept">
+        <p class="rezept-kopf">Heutiges Rezept</p>
+        <dl class="rezept-daten" aria-live="polite">
+          <div><dt>Methode</dt><dd data-feld="methode"></dd></div>
+          <div><dt>Mahlgrad</dt><dd data-feld="mahlgrad"></dd></div>
+          <div><dt>Menge</dt><dd data-feld="menge"></dd></div>
+          <div><dt>Zeit</dt><dd data-feld="zeit"></dd></div>
+          <div><dt>Dazu</dt><dd data-feld="dazu"></dd></div>
+        </dl>
+        <button type="button" id="wuerfeln">Nochmal würfeln</button>
+      </div>
+      <p class="hinweis">Rezepte gibt's hier keine. Menge, Mahlgrad und Zeit werden nach Gefühl eingestellt und am Geschmack korrigiert.</p>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <p>Offenlegung gemäß § 25 MedienG: Julian Hörbst, Freistadt. Persönliche Website. Keine Cookies, kein Tracking.</p>
+  </footer>
+
+  <script src="kaffee.js"></script>
+</body>
+</html>

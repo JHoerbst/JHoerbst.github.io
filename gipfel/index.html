@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gipfelbuch · Julian Hörbst</title>
+  <meta name="description" content="Mein Gipfelbuch: alle Gipfel, auf denen ich schon stand, vom Mühlviertel bis zum Mount Doom.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#2f4a3a">
+  <link rel="canonical" href="https://jhoerbst.github.io/gipfel/">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/caveat.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/archivo-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="gipfel.css">
+  <link rel="stylesheet" href="../assets/nav.css">
+</head>
+<body style="--nav-fg: var(--tinte)">
+  <header>
+    <nav class="sitenav" aria-label="Seiten">
+      <a class="sitenav-logo" href="../">jhoerbst</a>
+      <ul>
+        <li><a href="../">Start</a></li>
+        <li><a href="../reisen/">Reisen</a></li>
+        <li><a href="../camper/">Pajero</a></li>
+        <li><a href="../kaffee/">Kaffee</a></li>
+        <li><a href="../gipfel/" aria-current="page">Gipfel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titel">
+      <p class="vorspann">Eingetragen von Julian Hörbst</p>
+      <h1 id="titel">Gipfelbuch</h1>
+      <p class="lead">Alle Gipfel, auf denen ich schon stand. Vom Hausberg im Mühlviertel bis zum Schicksalsberg in Neuseeland. Ein paar davon mit Lift, darüber reden wir nicht.</p>
+      <div class="sortierung" role="group" aria-label="Panorama ordnen">
+        <button type="button" data-ordnung="panorama" aria-pressed="true">Panorama</button>
+        <button type="button" data-ordnung="hoehe" aria-pressed="false">Nach Höhe</button>
+        <button type="button" data-ordnung="land" aria-pressed="false">Nach Land</button>
+      </div>
+      <figure class="panorama" id="panorama" aria-label="Höhenpanorama aller Gipfel"></figure>
+      <p class="panorama-tipp">Scroll nach unten, dann steigt der Wanderer auf den höchsten Gipfel.</p>
+      <dl class="zahlen" id="zahlen"></dl>
+    </section>
+
+    <section class="buch" aria-labelledby="buch-titel">
+      <h2 id="buch-titel">Einträge</h2>
+      <div class="seite">
+        <div class="spalten" aria-hidden="true">
+          <span>Gipfel</span><span>Höhe</span><span>Gebiet</span><span>Bemerkung</span>
+        </div>
+        <ol class="eintraege" id="eintraege"></ol>
+      </div>
+    </section>
+
+    <section class="spiel" id="spiel" aria-labelledby="spiel-titel">
+      <h2 id="spiel-titel">Höher oder tiefer?</h2>
+      <div class="spiel-feld">
+        <div class="spiel-karte">
+          <p class="spiel-name"></p>
+          <p class="spiel-gebiet"></p>
+          <p class="spiel-hoehe"></p>
+        </div>
+        <div class="spiel-knoepfe">
+          <button type="button" data-tipp="hoeher">Höher</button>
+          <button type="button" data-tipp="tiefer">Tiefer</button>
+        </div>
+        <div class="spiel-karte verdeckt">
+          <p class="spiel-name"></p>
+          <p class="spiel-gebiet"></p>
+          <p class="spiel-hoehe"></p>
+        </div>
+      </div>
+      <p class="spiel-meldung" aria-live="polite"></p>
+      <p class="spiel-stand">Serie <strong data-serie>0</strong> · Rekord <strong data-best>0</strong></p>
+      <button type="button" class="spiel-weiter" hidden>Weiter</button>
+    </section>
+
+    <section class="karte-teil" aria-labelledby="karte-titel">
+      <h2 id="karte-titel">Karte</h2>
+      <div class="karte-rahmen">
+        <div class="karte-tools" role="group" aria-label="Kartenausschnitt">
+          <button type="button" data-view="alpen" aria-pressed="true">Alpen</button>
+          <button type="button" data-view="welt" aria-pressed="false">Welt</button>
+        </div>
+        <div class="karte" id="karte"><p class="karte-hinweis">Karte wird geladen …</p></div>
+        <p class="massstab">Gipfel als Dreiecke, Höhen in Metern. Klettersteige rot.</p>
+      </div>
+    </section>
+
+    <section class="wunsch" aria-labelledby="wunsch-titel">
+      <h2 id="wunsch-titel">Da will ich noch rauf</h2>
+      <ul class="wegweiser" id="wegweiser"></ul>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <p>Höhen laut Karten und Gipfelverzeichnissen, gerundet. Kartendaten: <a href="https://www.naturalearthdata.com/">Natural Earth</a>.
+      Offenlegung gemäß § 25 MedienG: Julian Hörbst, Freistadt. Persönliche Website. Keine Cookies, kein Tracking.</p>
+  </footer>
+
+  <p class="hoehenmesser" id="hoehenmesser" aria-hidden="true"><span>Höhe</span><strong>0 m</strong></p>
+
+  <script src="gipfel.js"></script>
+</body>
+</html>

@@ -1,0 +1,798 @@
+/* Pajero-Seite: eigener Look wie ein Prospekt von 1989 */
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../assets/fonts/archivo-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../assets/fonts/archivo-italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Martian Mono";
+  src: url("../assets/fonts/martian-mono.woff2") format("woff2");
+  font-weight: 100 800;
+  font-display: swap;
+}
+
+:root {
+  --gruen: #1c3527;        /* Lack */
+  --gruen-tief: #142a1e;
+  --gruen-hell: #2a4a37;
+  --creme: #efe8d6;
+  --grau: #a9b6a5;
+  --gelb: #f3b51b;
+  --orange: #e8711c;
+  --rot: #c8362b;
+
+  --gutter: clamp(1rem, 5vw, 3rem);
+  --measure: 60ch;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--gruen);
+  color: var(--creme);
+  font-family: "Archivo", system-ui, sans-serif;
+  font-stretch: 100%;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--orange);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--gelb);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gelb);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+main,
+.kopf,
+.fuss {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+/* Kopfzeile */
+
+.kopf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.875rem;
+  font-stretch: 112%;
+}
+
+.mark {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.kopf nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.kopf nav a {
+  color: var(--grau);
+  text-decoration: none;
+}
+
+.kopf nav a[aria-current="page"],
+.kopf nav a:hover {
+  color: var(--creme);
+}
+
+/* Titel mit Zierstreifen */
+
+.hero {
+  padding: clamp(3rem, 9vw, 6rem) 0 clamp(3rem, 8vw, 5rem);
+}
+
+.modell {
+  font-style: italic;
+  font-stretch: 115%;
+  font-weight: 600;
+  color: var(--gelb);
+}
+
+h1 {
+  font-size: clamp(3.5rem, 17vw, 11rem);
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: 125%;
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin: 0.15em 0 0 -0.04em;
+}
+
+.streifen {
+  display: grid;
+  gap: 5px;
+  margin: 1.25rem calc(var(--gutter) * -1) 2.25rem;
+  transform: skewY(-3deg);
+  transform-origin: left;
+}
+
+.streifen span {
+  display: block;
+  height: clamp(8px, 1.4vw, 14px);
+  transform-origin: left;
+}
+
+.streifen span:nth-child(1) { background: var(--gelb); width: 100%; }
+.streifen span:nth-child(2) { background: var(--orange); width: 94%; }
+.streifen span:nth-child(3) { background: var(--rot); width: 88%; }
+
+/* Der eine Auftritt: Streifen fahren beim Laden ein */
+@media (prefers-reduced-motion: no-preference) {
+  .streifen span {
+    animation: einfahren 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .streifen span:nth-child(2) { animation-delay: 0.08s; }
+  .streifen span:nth-child(3) { animation-delay: 0.16s; }
+}
+
+@keyframes einfahren {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.lead {
+  max-width: var(--measure);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.5;
+}
+
+/* Abschnitte */
+
+.daten,
+.ausbau,
+.touren {
+  padding: clamp(3rem, 8vw, 5rem) 0;
+  border-top: 3px solid var(--gruen-hell);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: 120%;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+/* Technische Daten wie im Prospekt */
+
+.spec {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  margin: 0;
+}
+
+.spec div {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--gruen-hell);
+}
+
+.spec dt {
+  color: var(--grau);
+  font-size: 0.9375rem;
+}
+
+.spec dd {
+  margin: 0;
+  font-weight: 600;
+  font-stretch: 108%;
+}
+
+.lack {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.45em;
+  vertical-align: -0.1em;
+  border-radius: 50%;
+  background: #1f4a32;
+  box-shadow: 0 0 0 2px var(--creme);
+}
+
+.unter {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 115%;
+  color: var(--gelb);
+}
+
+.ausruestung {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ausruestung li {
+  padding: 0.35rem 0.85rem;
+  background: var(--gruen-tief);
+  border-radius: 999px;
+  font-size: 0.9375rem;
+}
+
+/* Zeitleiste */
+
+.zeitleiste {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.75rem;
+  border-left: 4px solid var(--orange);
+}
+
+.zeitleiste > li {
+  position: relative;
+  padding-bottom: 2.25rem;
+  max-width: var(--measure);
+}
+
+.zeitleiste > li:last-child {
+  padding-bottom: 0;
+}
+
+.zeitleiste > li::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.75rem - 11px);
+  top: 0.3rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--gruen);
+  border: 4px solid var(--gelb);
+}
+
+.zeitleiste time {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-stretch: 115%;
+  color: var(--gelb);
+}
+
+.zeitleiste h3 {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 1.375rem;
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: 115%;
+  line-height: 1.2;
+}
+
+.zeitleiste > li > p {
+  color: var(--grau);
+}
+
+/* Touren */
+
+.touren-zahl {
+  margin: -1rem 0 1.5rem;
+  color: var(--grau);
+}
+
+.mini-karte {
+  background: var(--gruen-tief);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.mini-karte svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.mini-karte .laender path {
+  fill: var(--gruen-hell);
+  stroke: var(--gruen-tief);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.mini-karte .laender path.camper {
+  fill: #6d5a2a;
+}
+
+.mini-karte .pin {
+  fill: var(--gelb);
+  stroke: var(--gruen-tief);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.mini-karte .pin-label {
+  fill: var(--creme);
+  font-family: "Archivo", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 110%;
+}
+
+.touren-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.touren-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--gruen-hell);
+}
+
+.touren-list strong {
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: 115%;
+  font-size: 1.125rem;
+}
+
+.touren-list span {
+  color: var(--grau);
+}
+
+.mehr {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+.fuss {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 0.8125rem;
+  color: var(--grau);
+}
+
+@media (max-width: 44rem) {
+  .spec {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .spec div {
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+  }
+
+  .kopf nav {
+    gap: 0.9rem;
+  }
+}
+
+/* Szene: Pajero auf den Zierstreifen */
+
+.szene {
+  margin: 1rem calc(var(--gutter) * -1) 2.25rem;
+}
+
+.szene svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.sonne { fill: var(--gelb); opacity: 0.9; }
+.berge-fern { fill: #24432f; }
+.berge { fill: #2a4d37; }
+.str-gelb { fill: var(--gelb); }
+.str-orange { fill: var(--orange); }
+.str-rot { fill: var(--rot); }
+
+.schatten { fill: #0c1a12; opacity: 0.45; }
+.lack { fill: url(#lack); }
+.gurtlinie { stroke: #3f6e52; stroke-width: 2; }
+.radhaus { fill: #0b140f; }
+.radlauf { fill: none; stroke: #183324; stroke-width: 7; stroke-linejoin: round; stroke-linecap: round; }
+.glas { fill: url(#glas); }
+.fuge { fill: none; stroke: #132619; stroke-width: 1.5; }
+.schwarz { fill: #111a14; }
+.schwarz-linie { stroke: #111a14; stroke-width: 3; }
+.lamellen line { stroke: #2b3a30; stroke-width: 3; }
+.schnorchel { fill: none; stroke: #111a14; stroke-width: 11; stroke-linecap: round; stroke-linejoin: round; }
+.led { fill: #f4f1e6; }
+.winde { fill: #9aa3a0; }
+.blinker { fill: var(--orange); }
+.reserverad { fill: #151c18; stroke: #b9bfbd; stroke-width: 3; }
+.alukiste { fill: #c9cfcc; }
+.alu-rippe { stroke: #a5adaa; stroke-width: 2; }
+.rueck { fill: var(--rot); }
+.tankdeckel { fill: none; stroke: #183324; stroke-width: 1.5; }
+.trittbrett { fill: #9aa3a0; }
+.reifen { fill: #121614; }
+.felge { fill: #b9bfbd; }
+.speichen rect { fill: #6d7572; }
+.nabe { fill: #dfe3e1; }
+.badge {
+  fill: #d9ddd8;
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: 120%;
+  letter-spacing: 0.04em;
+}
+
+/* Dachzelt */
+.zelt { cursor: pointer; outline: none; }
+.zelt-box { fill: #3a4044; }
+.gurt { stroke: #c9e04a; stroke-width: 3; }
+.zelt-stoff { fill: #d6dad3; }
+.zelt-fly { fill: #4e6d5b; }
+.zelt-fenster { fill: #2b3237; }
+.leiter line { stroke: #c9cfcc; stroke-width: 4; stroke-linecap: round; }
+.leiter .sprosse { stroke-width: 3; }
+
+.zelt-dach,
+.leiter {
+  transform-box: fill-box;
+  transition: transform 0.5s cubic-bezier(0.3, 1.3, 0.5, 1);
+}
+
+.zelt-dach { transform-origin: 50% 100%; transform: scaleY(0); }
+.leiter { transform-origin: 50% 0; transform: scaleY(0); transition-delay: 0s; }
+
+.szene.offen .zelt-dach { transform: scaleY(1); }
+.szene.offen .leiter { transform: scaleY(1); transition-delay: 0.3s; }
+
+.zelt:focus-visible .zelt-box { stroke: var(--gelb); stroke-width: 3; }
+.zelt:hover .zelt-box { fill: #4a5156; }
+
+.szene-tipp {
+  margin-top: 0.5rem;
+  padding: 0 var(--gutter);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--grau);
+  text-align: right;
+}
+
+
+/* Einfahrt: einmal beim Laden, von rechts nach links */
+@media (prefers-reduced-motion: no-preference) {
+  .auto-fahrt {
+    animation: vorfahren 1.6s cubic-bezier(0.15, 0.6, 0.25, 1) both;
+  }
+
+  .rad {
+    animation: rollen 1.6s cubic-bezier(0.15, 0.6, 0.25, 1) both;
+  }
+
+  .auto {
+    animation: federn 0.5s ease-out 1.45s both;
+  }
+
+  .str {
+    transform-box: fill-box;
+    transform-origin: left;
+    animation: einfahren 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .str-orange { animation-delay: 0.08s; }
+  .str-rot { animation-delay: 0.16s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zelt-dach,
+  .leiter {
+    transition: none;
+  }
+}
+
+@keyframes vorfahren {
+  from { transform: translateX(-760px); }
+  to { transform: translateX(0); }
+}
+
+@keyframes rollen {
+  from { transform: rotate(-800deg); }
+  to { transform: rotate(0); }
+}
+
+@keyframes federn {
+  0% { transform: translate(240px, 0); }
+  40% { transform: translate(240px, 3px); }
+  100% { transform: translate(240px, 0); }
+}
+
+/* Fotos in der Zeitleiste */
+
+.bilder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+}
+
+.bild {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: var(--gruen-tief);
+  cursor: zoom-in;
+}
+
+.bilder .bild {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bilder img {
+  display: block;
+  width: 8.5rem;
+  height: 8.5rem;
+  object-fit: cover;
+}
+
+/* Galerie wie eingeklebte Abzüge */
+
+.galerie {
+  padding: clamp(3rem, 8vw, 5rem) 0;
+  border-top: 3px solid var(--gruen-hell);
+}
+
+.galerie-list {
+  columns: 3 16rem;
+  column-gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.galerie-list li {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.5rem 0.75rem;
+  background: var(--creme);
+  color: var(--gruen);
+  transform: rotate(-0.8deg);
+}
+
+.galerie-list li:nth-child(even) {
+  transform: rotate(0.9deg);
+}
+
+.galerie-list img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.galerie-list p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 112%;
+}
+
+/* Großansicht */
+
+.foto-dialog {
+  max-width: min(92vw, 70rem);
+  max-height: 92vh;
+  padding: 0;
+  border: 0;
+  border-radius: 0.75rem;
+  background: var(--gruen-tief);
+  color: var(--creme);
+}
+
+.foto-dialog::backdrop {
+  background: rgb(8 18 12 / 0.88);
+}
+
+.foto-dialog figure {
+  margin: 0;
+}
+
+.foto-dialog img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(92vh - 4rem);
+  margin: 0 auto;
+}
+
+.foto-dialog figcaption {
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  color: var(--grau);
+}
+
+.foto-dialog .schliessen {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gruen);
+  background: var(--creme);
+  border: 0;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+}
+
+/* Nacht */
+.himmel { fill: transparent; transition: fill 0.6s; }
+.sterne circle { fill: #f4efd8; }
+.sterne { opacity: 0; transition: opacity 0.6s; }
+.lichtkegel { fill: #fff6c8; opacity: 0; transition: opacity 0.4s; }
+.sonne, .berge, .berge-fern { transition: fill 0.6s; }
+
+.nacht .himmel { fill: #0e1b2c; }
+.nacht .sterne { opacity: 1; }
+.nacht .sonne { fill: #ece7cf; }
+.nacht .berge-fern { fill: #132433; }
+.nacht .berge { fill: #182c3a; }
+.nacht .lichtkegel { opacity: 0.22; }
+.nacht .led { fill: #fffbe0; }
+.nacht .zelt-fenster { fill: #f5c869; }
+
+/* Cockpit unter der Szene */
+.cockpit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 0.85rem;
+  padding: 0 var(--gutter);
+}
+
+.fahren {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.pedal,
+.nacht-knopf {
+  font: inherit;
+  font-weight: 800;
+  color: var(--gruen);
+  background: var(--gelb);
+  border: 0;
+  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+}
+
+.pedal:active {
+  background: var(--orange);
+}
+
+.nacht-knopf {
+  background: none;
+  color: var(--creme);
+  box-shadow: inset 0 0 0 2px var(--creme);
+  font-style: italic;
+  font-stretch: 115%;
+}
+
+.nacht-knopf[aria-pressed="true"] {
+  background: var(--creme);
+  color: var(--gruen);
+}
+
+.tacho {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-left: auto;
+  font-family: "Martian Mono", ui-monospace, monospace;
+}
+
+.tacho-zahl {
+  padding: 0.15rem 0.4rem;
+  background: #0b120e;
+  color: #f2efe2;
+  border-radius: 4px;
+  letter-spacing: 0.2em;
+  font-variant-numeric: tabular-nums;
+}
+
+.tacho-einheit,
+.trip {
+  font-size: 0.8125rem;
+  color: var(--grau);
+}
+
+.szene-tipp {
+  text-align: left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .himmel, .sterne, .lichtkegel, .sonne, .berge, .berge-fern { transition: none; }
+}
+
+/* Endlose Landschaft */
+.tanne { fill: #1d3a29; }
+.laub { fill: #2f5a3d; }
+.stamm { fill: #4a3424; }
+.see { fill: #5d8fa3; }
+.see-glanz { stroke: #cfe3ea; stroke-width: 1.5; stroke-linecap: round; opacity: 0.7; }
+.huette { fill: #7a5236; }
+.dach { fill: #3b2a20; }
+.fenster { fill: #2a1c14; }
+.schild-gelb { fill: var(--gelb); }
+.pfosten { fill: #e9e4d2; }
+.pfosten-reflektor { fill: var(--orange); }
+.gras { fill: none; stroke: #2f5a3d; stroke-width: 2; stroke-linecap: round; }
+
+.nacht .tanne { fill: #10202a; }
+.nacht .laub { fill: #15283a; }
+.nacht .stamm { fill: #1c1a1c; }
+.nacht .see { fill: #22394c; }
+.nacht .see-glanz { stroke: #ece7cf; opacity: 0.4; }
+.nacht .huette { fill: #2a2630; }
+.nacht .dach { fill: #18151b; }
+.nacht .fenster { fill: #f5c869; }
+.nacht .pfosten { fill: #8c8a80; }
+.nacht .gras { stroke: #15283a; }
+
+/* Räder drehen sich immer um ihre eigene Mitte */
+.rad {
+  transform-box: fill-box;
+  transform-origin: center;
+}

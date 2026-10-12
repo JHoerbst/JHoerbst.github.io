@@ -17,13 +17,19 @@
   <link rel="preload" href="assets/fonts/martian-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/nav.css">
 </head>
-<body>
-  <header class="top">
-    <a class="mark" href="#" aria-label="Julian Hörbst, zum Seitenanfang">jhoerbst</a>
-    <nav aria-label="Profile">
-      <a href="https://github.com/JHoerbst">GitHub</a>
-      <a href="mailto:julian.hoerbst@gmail.com">E-Mail</a>
+<body style="--nav-fg: var(--text)">
+  <header>
+    <nav class="sitenav" aria-label="Seiten">
+      <a class="sitenav-logo" href="./">jhoerbst</a>
+      <ul>
+        <li><a href="./" aria-current="page">Start</a></li>
+        <li><a href="reisen/">Reisen</a></li>
+        <li><a href="camper/">Pajero</a></li>
+        <li><a href="kaffee/">Kaffee</a></li>
+        <li><a href="gipfel/">Gipfel</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -41,23 +47,15 @@
 <span class="l">  <span class="k">firma</span>       = <span class="s">"DS Development"</span></span>
 <span class="l">  <span class="k">baut</span>        = [<span class="s">"Cloud"</span>, <span class="s">"APIs"</span>, <span class="s">"IaC"</span>]</span>
 <span class="l">  <span class="k">bastelt</span>     = [<span class="s">"Hardware"</span>, <span class="s">"SBCs"</span>]</span>
-<span class="l">  <span class="k">am_liebsten</span> = <span class="s">"irgendwo am Berg"</span></span>
+<span class="l">  <span class="k">zockt</span>       = <span class="s">"am PC"</span></span>
+<span class="l">  <span class="k">am_liebsten</span> = <button class="s wechsel" type="button" id="am-liebsten" title="Draufklicken">"irgendwo am Berg"</button></span>
+<span class="l">  <span class="k">faehrt</span>      = <a class="s" href="camper/">"Pajero V6, Bj. 1989"</a></span>
+<span class="l">  <span class="k">trinkt</span>      = [<a class="s" href="kaffee/">"Flat White"</a>, <a class="s" href="kaffee/">"Espresso"</a>]</span>
 <span class="l">  <span class="k">urlaubsreif</span> = <button class="bool" type="button" aria-pressed="true" title="Draufklicken">true</button> <span class="c"># eh immer</span></span>
 <span class="l">}<span class="cursor" aria-hidden="true"></span></span></code></pre>
+        <button type="button" class="apply-knopf" id="apply">$ terraform apply</button>
+        <pre class="terminal" id="terminal" aria-live="polite" hidden></pre>
       </div>
-    </section>
-
-    <section class="about" aria-label="Über mich">
-      <p>
-        Tagsüber baue ich bei DS Development Cloud-Systeme. Ich entwerfe APIs, schreibe
-        Infrastruktur als Code und schaue, dass das Ganze auch in zwei Jahren noch
-        jemand versteht. Meistens bin das dann eh ich.
-      </p>
-      <p>
-        Nebenbei tüftle ich an eigenen Projekten. Angefangen hat das mit Köna, einem
-        Maturaprojekt an der HTL Leonding. Heute bonieren damit Kellnerinnen und Kellner
-        auf Vereinsfesten in ganz Österreich.
-      </p>
     </section>
 
     <section class="projects" aria-labelledby="projekte">
@@ -74,8 +72,8 @@
           <p class="feature-lead">
             Mein größtes Projekt und ein bisschen mein zweiter Job. Köna ist das Boniersystem
             für Vereinsfeste: Bestellt wird am Handy, die Bons kommen sofort an Schank und
-            Küche raus, auch wenn's im Festzelt kein Internet gibt. Und ich mache dort so
-            ziemlich alles, was dazugehört.
+            Küche raus, auch wenn's im Festzelt kein Internet gibt. Ich mache dort so ziemlich
+            alles, vom Code bis zum Kofferpacken.
           </p>
 
           <dl class="facts">
@@ -120,8 +118,8 @@
             <a class="project-link" href="https://tischlerei-pachinger.at">tischlerei-pachinger.at</a>
           </div>
           <p>
-            Neue Website für eine Tischlerei im Mühlviertel. Schnell, ohne Cookies und
-            ohne Tracking, so wie Websites eigentlich sein sollten.
+            Neue Website für eine Tischlerei im Mühlviertel. Lädt schneller, als man
+            „Massivholz“ sagen kann, und kommt ohne Cookies aus.
           </p>
           <ul class="stack" aria-label="Technik">
             <li>Astro</li><li>TypeScript</li>
@@ -152,18 +150,30 @@
       <ul class="hobby-list">
         <li class="hobby hobby-berg">
           <svg viewBox="0 0 48 32" aria-hidden="true"><path d="M2 30 L17 8 L24 18 L31 10 L46 30 Z"/><path d="M14 12.5 L17 8 L20 12.5"/></svg>
-          <h3>Berge &amp; Wandern</h3>
-          <p>Am Wochenende eher auf einem Gipfel als am Schreibtisch. Hauptsache rauf.</p>
-        </li>
-        <li class="hobby hobby-chip">
-          <svg viewBox="0 0 48 32" aria-hidden="true"><rect x="14" y="6" width="20" height="20" rx="2"/><path d="M19 6 V2 M24 6 V2 M29 6 V2 M19 26 V30 M24 26 V30 M29 26 V30 M14 11 H10 M14 16 H10 M14 21 H10 M34 11 H38 M34 16 H38 M34 21 H38"/></svg>
-          <h3>Hardware &amp; Einplatinenrechner</h3>
-          <p>Kleine Rechner, große Pläne. Irgendwas wird immer gerade geflasht oder umgebaut.</p>
+          <h3>Hauptsache draußen</h3>
+          <p>Wandern, Klettersteig, Fischen, Camping oder einfach ein Spaziergang. Drinnen ist eh nur das WLAN besser.</p>
+          <p class="hobby-zahl" id="gipfel-zahl" hidden></p>
+          <a class="hobby-link" href="gipfel/">Zum Gipfelbuch</a>
         </li>
         <li class="hobby hobby-reise">
           <svg viewBox="0 0 48 32" aria-hidden="true"><rect x="10" y="9" width="28" height="20" rx="3"/><path d="M19 9 V5 H29 V9 M18 9 V29 M30 9 V29"/></svg>
           <h3>Unterwegs sein</h3>
-          <p>Neue Orte, gutes Essen, möglichst wenig Plan. Ab und zu muss man einfach weg.</p>
+          <p>Am liebsten mit gutem Essen und wenig Plan. Von Faro bis Cairns steht alles in meinem Reisepass, nur Liberty City fehlt noch.</p>
+          <p class="hobby-zahl" id="reise-zahl" hidden></p>
+          <a class="hobby-link" href="reisen/">Zum Reisepass</a>
+        </li>
+        <li class="hobby hobby-pajero">
+          <svg viewBox="0 0 48 32" aria-hidden="true"><rect x="9" y="3" width="16" height="4" rx="1"/><path d="M4 23 V10 Q4 8 6 8 H29 L34 14 H43 Q45 14 45 16 V23 Z"/><path d="M8 11 H17 V14 H8 Z M20 11 H28 L31 14 H20 Z"/><rect x="1" y="12" width="3" height="9" rx="1.5"/><circle class="rad" cx="13" cy="24" r="4"/><circle class="rad" cx="37" cy="24" r="4"/></svg>
+          <h3>Mein Pajero</h3>
+          <p>Ein Mitsubishi Pajero V6 von 1989, selbst restauriert, mit Dachzelt und Ausziehküche. Säuft mehr als ich und schläft am liebsten in Kiesbetten.</p>
+          <p class="hobby-zahl" id="pajero-zahl" hidden></p>
+          <a class="hobby-link" href="camper/">Zum Pajero</a>
+        </li>
+        <li class="hobby hobby-kaffee">
+          <svg viewBox="0 0 48 32" aria-hidden="true"><path d="M8 10 H34 V20 Q34 29 21 29 Q8 29 8 20 Z"/><path d="M34 13 Q41 13 41 18 Q41 23 34 23"/><path d="M16 6 Q14 3 16 1 M22 6 Q20 3 22 1 M28 6 Q26 3 28 1"/></svg>
+          <h3>Kaffee</h3>
+          <p>Aus Siebträger, French Press oder Mokkakanne, meistens als Flat White. Eine Waage hat dabei noch nie gefehlt.</p>
+          <a class="hobby-link" href="kaffee/">Zum Kaffee</a>
         </li>
       </ul>
     </section>
@@ -173,15 +183,44 @@
     <h2 id="kontakt">Sag Servus</h2>
     <p>Ein Projekt, eine Frage oder ein guter Wandertipp? Schreib mir:</p>
     <a class="mail" href="mailto:julian.hoerbst@gmail.com">julian.hoerbst@gmail.com</a>
+    <p class="profile">Oder auf <a href="https://github.com/JHoerbst">GitHub</a>.</p>
     <p class="fine">
-      Von Hand gebaut mit HTML und CSS. Keine Cookies, kein Tracking.
+      Von Hand gebaut mit HTML und CSS. Keine Cookies, außer zum Kaffee.
     </p>
     <p class="legal">
       Offenlegung gemäß § 25 MedienG: Julian Hörbst, Freistadt. Persönliche Website.
     </p>
   </footer>
 
+  <!-- Konami-Code: ↑↑↓↓←→←→BA -->
+  <div class="konami" id="konami" aria-hidden="true">
+    <svg viewBox="0 0 48 32"><rect x="9" y="3" width="16" height="4" rx="1"/><path d="M4 23 V10 Q4 8 6 8 H29 L34 14 H43 Q45 14 45 16 V23 Z"/><path d="M8 11 H17 V14 H8 Z M20 11 H28 L31 14 H20 Z"/><rect x="1" y="12" width="3" height="9" rx="1.5"/><circle class="rad" cx="13" cy="24" r="4"/><circle class="rad" cx="37" cy="24" r="4"/></svg>
+  </div>
+
+  <script src="assets/start.js"></script>
   <script>
+    // Zahlen von der Reiseseite, damit die Startseite immer mitzieht
+    fetch('reisen/reisen.json', { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((d) => {
+        const reisen = d.reisen || [];
+        const laender = new Set(reisen.flatMap((r) => r.laender || []));
+        const pajero = reisen.filter((r) => (r.tags || []).includes('camper'));
+        const zeige = (id, text) => { const el = document.getElementById(id); el.textContent = text; el.hidden = false; };
+        zeige('reise-zahl', `${laender.size} Länder, ${reisen.length} Reisen`);
+        if (pajero.length) zeige('pajero-zahl', `${pajero.length} Reisen, seit Juli 2022`);
+      })
+      .catch(() => {});
+    fetch('gipfel/gipfel.json', { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((d) => {
+        const g = (d.gipfel || []).filter((x) => x.hoehe != null).sort((a, b) => b.hoehe - a.hoehe);
+        const el = document.getElementById('gipfel-zahl');
+        el.textContent = `${d.gipfel.length} Gipfel, höchster ${g[0].hoehe.toLocaleString('de-AT')} m`;
+        el.hidden = false;
+      })
+      .catch(() => {});
+
     // Kleines Easter Egg: urlaubsreif umschalten.
     document.querySelectorAll('.bool').forEach((btn) => {
       const comment = btn.nextElementSibling;
