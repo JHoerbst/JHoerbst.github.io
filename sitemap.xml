@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jhoerbst.github.io/</loc>
-  </url>
+  <url><loc>https://jhoerbst.github.io/</loc></url>
+  <url><loc>https://jhoerbst.github.io/reisen/</loc></url>
+  <url><loc>https://jhoerbst.github.io/camper/</loc></url>
+  <url><loc>https://jhoerbst.github.io/kaffee/</loc></url>
+  <url><loc>https://jhoerbst.github.io/gipfel/</loc></url>
 </urlset>

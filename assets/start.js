@@ -87,4 +87,13 @@
       auto.classList.add('faehrt');
     }
   });
+
+  // E-Mail: steht im HTML rückwärts und ohne @, wird hier zusammengesetzt
+  const mail = document.getElementById('mail');
+  if (mail) {
+    const dreh = (t) => [...t].reverse().join('');
+    const adresse = `${dreh(mail.dataset.u)}@${dreh(mail.dataset.d)}`;
+    mail.href = `mailto:${adresse}`;
+    mail.textContent = adresse;
+  }
 })();
