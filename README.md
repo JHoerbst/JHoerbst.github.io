@@ -1,9 +1,9 @@
-# hoerbst.website
-Git Repo for my Website
+# jhoerbst.github.io
 
-//TODO: Google Analytics
-        Add Bitbucket Profile/delete FB&IG Profile
-        Remove Datepicker if not needed
-        Add <a href="https://icons8.com">Icon pack by Icons8</a>
-        
-        http://www.palettable.io/FCFCF8-074866-2E3331-9AA19D
+Persönliche Website, live unter https://jhoerbst.github.io.
+
+Reines HTML/CSS ohne Build-Schritt: Änderungen an `index.html` oder `assets/style.css`
+pushen, GitHub Pages veröffentlicht sie nach ein bis zwei Minuten.
+
+- Foto: `assets/img/me.jpg` (quadratisch, ca. 800 × 800 px). Fehlt es, erscheinen die Initialen.
+- Schriften liegen in `assets/fonts/` (Martian Mono, Instrument Sans, beide OFL), damit nichts von Google nachgeladen wird.
