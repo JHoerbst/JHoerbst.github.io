@@ -1,0 +1,919 @@
+{
+  "reisen": [
+    {
+      "titel": "London",
+      "wann": "2013-09",
+      "laender": [
+        "GB"
+      ],
+      "orte": [
+        {
+          "ort": "London",
+          "land": "GB",
+          "lat": 51.5072,
+          "lon": -0.1276
+        }
+      ]
+    },
+    {
+      "titel": "Malta",
+      "wann": "2015-04",
+      "laender": [
+        "MT"
+      ],
+      "orte": [
+        {
+          "ort": "Malta",
+          "land": "MT",
+          "lat": 35.9375,
+          "lon": 14.3754
+        }
+      ]
+    },
+    {
+      "titel": "Schulreise",
+      "wann": "2016",
+      "notiz": "Mit der Schule die Riviera entlang, inklusive Côte d'Azur.",
+      "laender": [
+        "IT",
+        "MC",
+        "FR"
+      ],
+      "orte": [
+        {
+          "ort": "Mailand",
+          "land": "IT",
+          "lat": 45.4642,
+          "lon": 9.19
+        },
+        {
+          "ort": "Nizza",
+          "land": "FR",
+          "lat": 43.7102,
+          "lon": 7.262
+        },
+        {
+          "ort": "Monaco",
+          "land": "MC",
+          "lat": 43.7384,
+          "lon": 7.4246
+        },
+        {
+          "ort": "Genua",
+          "land": "IT",
+          "lat": 44.4056,
+          "lon": 8.9463
+        },
+        {
+          "ort": "Portofino",
+          "land": "IT",
+          "lat": 44.3036,
+          "lon": 9.2098
+        },
+        {
+          "ort": "Cinque Terre",
+          "land": "IT",
+          "lat": 44.127,
+          "lon": 9.712
+        },
+        {
+          "ort": "Pisa",
+          "land": "IT",
+          "lat": 43.7228,
+          "lon": 10.4017
+        },
+        {
+          "ort": "Florenz",
+          "land": "IT",
+          "lat": 43.7696,
+          "lon": 11.2558
+        }
+      ],
+      "tags": [
+        "rundreise"
+      ]
+    },
+    {
+      "titel": "Umag",
+      "wann": "2016-08",
+      "laender": [
+        "HR"
+      ],
+      "orte": [
+        {
+          "ort": "Umag",
+          "land": "HR",
+          "lat": 45.4314,
+          "lon": 13.5241
+        }
+      ]
+    },
+    {
+      "titel": "Schulreise",
+      "wann": "2016-11",
+      "notiz": "Die EZB in Frankfurt, das EU-Parlament in Brüssel und die Brücken und Kanäle von Brügge.",
+      "laender": [
+        "DE",
+        "BE"
+      ],
+      "orte": [
+        {
+          "ort": "Frankfurt",
+          "land": "DE",
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "ort": "Brüssel",
+          "land": "BE",
+          "lat": 50.8503,
+          "lon": 4.3517
+        },
+        {
+          "ort": "Brügge",
+          "land": "BE",
+          "lat": 51.2093,
+          "lon": 3.2247
+        }
+      ],
+      "tags": [
+        "rundreise"
+      ]
+    },
+    {
+      "titel": "Prag",
+      "wann": "2017-07",
+      "laender": [
+        "CZ"
+      ],
+      "orte": [
+        {
+          "ort": "Prag",
+          "land": "CZ",
+          "lat": 50.0755,
+          "lon": 14.4378
+        }
+      ]
+    },
+    {
+      "titel": "Barcelona",
+      "wann": "2018-10",
+      "laender": [
+        "ES"
+      ],
+      "orte": [
+        {
+          "ort": "Barcelona",
+          "land": "ES",
+          "lat": 41.3874,
+          "lon": 2.1686
+        }
+      ]
+    },
+    {
+      "titel": "Amsterdam",
+      "wann": "2019-04",
+      "laender": [
+        "NL"
+      ],
+      "orte": [
+        {
+          "ort": "Amsterdam",
+          "land": "NL",
+          "lat": 52.3676,
+          "lon": 4.9041
+        }
+      ]
+    },
+    {
+      "titel": "Bosnien",
+      "wann": "2019-08",
+      "laender": [
+        "BA"
+      ],
+      "orte": [
+        {
+          "ort": "Tuzla",
+          "land": "BA",
+          "lat": 44.5384,
+          "lon": 18.6763
+        },
+        {
+          "ort": "Sarajevo",
+          "land": "BA",
+          "lat": 43.8563,
+          "lon": 18.4131
+        }
+      ]
+    },
+    {
+      "titel": "Portugal-Roadtrip",
+      "wann": "2021-08",
+      "notiz": "Von Faro nach Lissabon",
+      "laender": [
+        "PT"
+      ],
+      "orte": [
+        {
+          "ort": "Faro",
+          "land": "PT",
+          "lat": 37.0194,
+          "lon": -7.9304
+        },
+        {
+          "ort": "Lissabon",
+          "land": "PT",
+          "lat": 38.7223,
+          "lon": -9.1393
+        }
+      ]
+    },
+    {
+      "titel": "Europa-Roadtrip",
+      "wann": "2021-09",
+      "laender": [
+        "AT",
+        "CH",
+        "IT"
+      ],
+      "orte": []
+    },
+    {
+      "titel": "Schweden",
+      "wann": "2021-10",
+      "laender": [
+        "SE"
+      ],
+      "orte": [
+        {
+          "ort": "Stockholm",
+          "land": "SE",
+          "lat": 59.3293,
+          "lon": 18.0686
+        }
+      ]
+    },
+    {
+      "titel": "Madeira",
+      "wann": "2022-05",
+      "laender": [
+        "PT"
+      ],
+      "orte": [
+        {
+          "ort": "Madeira",
+          "land": "PT",
+          "lat": 32.7607,
+          "lon": -16.9595
+        }
+      ]
+    },
+    {
+      "titel": "Bosnien",
+      "wann": "2022-07",
+      "laender": [
+        "BA"
+      ],
+      "orte": [
+        {
+          "ort": "Tuzla",
+          "land": "BA",
+          "lat": 44.5384,
+          "lon": 18.6763
+        },
+        {
+          "ort": "Sarajevo",
+          "land": "BA",
+          "lat": 43.8563,
+          "lon": 18.4131
+        }
+      ]
+    },
+    {
+      "titel": "Allradfreigang",
+      "wann": "2022-09",
+      "notiz": "Offroad-Event in Aspang, erster Geländetest",
+      "tags": [
+        "camper"
+      ],
+      "laender": [
+        "AT"
+      ],
+      "orte": [
+        {
+          "ort": "Aspang",
+          "land": "AT",
+          "lat": 47.55,
+          "lon": 16.09
+        }
+      ]
+    },
+    {
+      "titel": "England",
+      "wann": "2022-10",
+      "laender": [
+        "GB"
+      ],
+      "orte": [
+        {
+          "ort": "Liverpool",
+          "land": "GB",
+          "lat": 53.4084,
+          "lon": -2.9916
+        },
+        {
+          "ort": "London",
+          "land": "GB",
+          "lat": 51.5072,
+          "lon": -0.1276
+        },
+        {
+          "ort": "Birmingham",
+          "land": "GB",
+          "lat": 52.4862,
+          "lon": -1.8904
+        }
+      ]
+    },
+    {
+      "titel": "Prag",
+      "wann": "2022-10",
+      "notiz": "Eisdisco und Kendrick Lamar live.",
+      "laender": [
+        "CZ"
+      ],
+      "orte": [
+        {
+          "ort": "Prag",
+          "land": "CZ",
+          "lat": 50.0755,
+          "lon": 14.4378
+        }
+      ]
+    },
+    {
+      "titel": "Madrid",
+      "wann": "2023-01",
+      "laender": [
+        "ES"
+      ],
+      "orte": [
+        {
+          "ort": "Madrid",
+          "land": "ES",
+          "lat": 40.4168,
+          "lon": -3.7038
+        }
+      ]
+    },
+    {
+      "titel": "USA-Ostküste",
+      "wann": "2023-02",
+      "notiz": "Intrepid, 9/11 Memorial, eine Scam-Cruise, Brooklyn Bridge, Central Park und Harry Potter and the Cursed Child am Broadway.",
+      "laender": [
+        "US"
+      ],
+      "orte": [
+        {
+          "ort": "New York",
+          "land": "US",
+          "lat": 40.7128,
+          "lon": -74.006
+        },
+        {
+          "ort": "Philadelphia",
+          "land": "US",
+          "lat": 39.9526,
+          "lon": -75.1652
+        },
+        {
+          "ort": "Washington, D.C.",
+          "land": "US",
+          "lat": 38.9072,
+          "lon": -77.0369
+        }
+      ]
+    },
+    {
+      "titel": "Zürich",
+      "wann": "2023-03",
+      "laender": [
+        "CH"
+      ],
+      "orte": [
+        {
+          "ort": "Zürich",
+          "land": "CH",
+          "lat": 47.3769,
+          "lon": 8.5417
+        }
+      ]
+    },
+    {
+      "titel": "Berlin",
+      "wann": "2023-04",
+      "laender": [
+        "DE"
+      ],
+      "orte": [
+        {
+          "ort": "Berlin",
+          "land": "DE",
+          "lat": 52.52,
+          "lon": 13.405
+        }
+      ]
+    },
+    {
+      "titel": "Slowenien",
+      "wann": "2023-05",
+      "notiz": "An der Save",
+      "laender": [
+        "SI"
+      ],
+      "orte": [],
+      "tags": [
+        "camper"
+      ]
+    },
+    {
+      "titel": "Dolomiten",
+      "wann": "2023-09",
+      "laender": [
+        "IT",
+        "AT"
+      ],
+      "orte": [
+        {
+          "ort": "Misurina",
+          "land": "IT",
+          "lat": 46.5877,
+          "lon": 12.257
+        },
+        {
+          "ort": "Kaiser-Franz-Josefs-Höhe",
+          "land": "AT",
+          "lat": 47.0757,
+          "lon": 12.7516
+        }
+      ],
+      "tags": [
+        "camper"
+      ],
+      "fotos": [
+        "../camper/fotos/dolomiten-misurina.jpg",
+        "../camper/fotos/dolomiten.jpg"
+      ],
+      "notiz": "Heimweg über die Großglockner-Hochalpenstraße, rauf bis zur Kaiser-Franz-Josefs-Höhe."
+    },
+    {
+      "titel": "Istanbul",
+      "wann": "2023-10",
+      "laender": [
+        "TR"
+      ],
+      "orte": [
+        {
+          "ort": "Istanbul",
+          "land": "TR",
+          "lat": 41.0082,
+          "lon": 28.9784
+        }
+      ]
+    },
+    {
+      "titel": "Budapest",
+      "wann": "2024",
+      "notiz": "City-Shenanigans: Gulasch, Burg, Bunker und eine Fahrt im Heißluftballon.",
+      "laender": [
+        "HU"
+      ],
+      "orte": [
+        {
+          "ort": "Budapest",
+          "land": "HU",
+          "lat": 47.4979,
+          "lon": 19.0402
+        }
+      ]
+    },
+    {
+      "titel": "Hamburg",
+      "wann": "2024-01",
+      "laender": [
+        "DE"
+      ],
+      "orte": [
+        {
+          "ort": "Hamburg",
+          "land": "DE",
+          "lat": 53.5511,
+          "lon": 9.9937
+        }
+      ]
+    },
+    {
+      "titel": "Paris",
+      "wann": "2024-02",
+      "laender": [
+        "FR"
+      ],
+      "orte": [
+        {
+          "ort": "Paris",
+          "land": "FR",
+          "lat": 48.8566,
+          "lon": 2.3522
+        }
+      ]
+    },
+    {
+      "titel": "Südsteiermark",
+      "wann": "2024-05",
+      "laender": [
+        "AT"
+      ],
+      "orte": [
+        {
+          "ort": "Südsteiermark",
+          "land": "AT",
+          "lat": 46.72,
+          "lon": 15.55
+        }
+      ],
+      "tags": [
+        "camper"
+      ]
+    },
+    {
+      "titel": "Australien & Neuseeland",
+      "wann": "2024-08",
+      "bis": "2024-09",
+      "notiz": "7 Wochen, die bisher größte Reise. Die Ostküste Australiens hinauf, dann die Nordinsel Neuseelands.",
+      "laender": [
+        "AU",
+        "NZ"
+      ],
+      "orte": [
+        {
+          "ort": "Sydney",
+          "land": "AU",
+          "lat": -33.8688,
+          "lon": 151.2093
+        },
+        {
+          "ort": "Cairns",
+          "land": "AU",
+          "lat": -16.9186,
+          "lon": 145.7781
+        },
+        {
+          "ort": "Nordinsel",
+          "land": "NZ",
+          "lat": -38.6857,
+          "lon": 176.0702
+        }
+      ]
+    },
+    {
+      "titel": "Turracher Höhe",
+      "wann": "2024-11",
+      "notiz": "Wandern, kochen, Natur.",
+      "laender": [
+        "AT"
+      ],
+      "orte": [
+        {
+          "ort": "Turracher Höhe",
+          "land": "AT",
+          "lat": 46.915,
+          "lon": 13.875
+        }
+      ]
+    },
+    {
+      "titel": "Grundlsee",
+      "wann": "2025-05",
+      "tags": [
+        "camper"
+      ],
+      "laender": [
+        "AT"
+      ],
+      "orte": [
+        {
+          "ort": "Grundlsee",
+          "land": "AT",
+          "lat": 47.63,
+          "lon": 13.87
+        }
+      ],
+      "fotos": [
+        "../camper/fotos/camping-berge.jpg"
+      ]
+    },
+    {
+      "titel": "Soča",
+      "wann": "2025-05",
+      "notiz": "Wandern, campen und Schichtfleisch aus dem Dutch Oven.",
+      "laender": [
+        "SI"
+      ],
+      "orte": [
+        {
+          "ort": "Soča-Tal",
+          "land": "SI",
+          "lat": 46.3378,
+          "lon": 13.5522
+        }
+      ]
+    },
+    {
+      "titel": "Schweiz & Italien",
+      "wann": "2025-08",
+      "notiz": "Mit dem Pajero über St. Moritz an den Comer See, in die Therme von San Pellegrino, nach Venedig und zum Schluss ins Kiesbett des Tagliamento.",
+      "tags": [
+        "camper"
+      ],
+      "laender": [
+        "CH",
+        "IT"
+      ],
+      "orte": [
+        {
+          "ort": "St. Moritz",
+          "land": "CH",
+          "lat": 46.4908,
+          "lon": 9.8355
+        },
+        {
+          "ort": "Comer See",
+          "land": "IT",
+          "lat": 45.9871,
+          "lon": 9.2614
+        },
+        {
+          "ort": "San Pellegrino Terme",
+          "land": "IT",
+          "lat": 45.8366,
+          "lon": 9.6643
+        },
+        {
+          "ort": "Venedig",
+          "land": "IT",
+          "lat": 45.4408,
+          "lon": 12.3155
+        },
+        {
+          "ort": "Tagliamento",
+          "land": "IT",
+          "lat": 46.28,
+          "lon": 13.09
+        }
+      ],
+      "fotos": [
+        "../camper/fotos/flussbett.jpg",
+        "../camper/fotos/tagliamento-ufer.jpg"
+      ]
+    },
+    {
+      "titel": "Sri Lanka & Thailand",
+      "wann": "2025-10",
+      "notiz": "Rundreise durch Sri Lanka, in Bangkok Oktopus essen und ein paar Tage Fünf-Sterne-Luxus, dann der PADI-Tauchkurs auf Koh Tao. Heim ging's nach einem gestrichenen Flug in einer 48-Stunden-Odyssee.",
+      "laender": [
+        "LK",
+        "TH"
+      ],
+      "orte": [
+        {
+          "ort": "Sri Lanka",
+          "land": "LK",
+          "lat": 7.8731,
+          "lon": 80.7718
+        },
+        {
+          "ort": "Bangkok",
+          "land": "TH",
+          "lat": 13.7563,
+          "lon": 100.5018
+        },
+        {
+          "ort": "Koh Tao",
+          "land": "TH",
+          "lat": 10.0956,
+          "lon": 99.8404
+        }
+      ]
+    },
+    {
+      "titel": "Bratislava",
+      "wann": "2025-12",
+      "notiz": "Silvester.",
+      "laender": [
+        "SK"
+      ],
+      "orte": [
+        {
+          "ort": "Bratislava",
+          "land": "SK",
+          "lat": 48.1486,
+          "lon": 17.1077
+        }
+      ]
+    },
+    {
+      "titel": "Krakau",
+      "wann": "2026-02",
+      "notiz": "IEM Krakau (CS2), Auschwitz und ein Abend in der Witcher-Taverne.",
+      "laender": [
+        "PL"
+      ],
+      "orte": [
+        {
+          "ort": "Krakau",
+          "land": "PL",
+          "lat": 50.0647,
+          "lon": 19.945
+        },
+        {
+          "ort": "Auschwitz",
+          "land": "PL",
+          "lat": 50.0344,
+          "lon": 19.2098
+        }
+      ]
+    },
+    {
+      "titel": "Rom",
+      "wann": "2026-02",
+      "notiz": "Kolosseum, Circus Maximus, Vatikan und Petersdom. Dazwischen Pizza, Pasta, Carbonara und Tiramisu.",
+      "laender": [
+        "IT",
+        "VA"
+      ],
+      "orte": [
+        {
+          "ort": "Rom",
+          "land": "IT",
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "ort": "Vatikan",
+          "land": "VA",
+          "lat": 41.9029,
+          "lon": 12.4534
+        }
+      ]
+    },
+    {
+      "titel": "Kroatien-Roadtrip",
+      "wann": "2026-07",
+      "notiz": "Mit dem Pajero nach Dugi Otok, quer durchs Landesinnere zur Flugzeugkaverne Željava und ein Abstecher nach Slowenien.",
+      "tags": [
+        "camper"
+      ],
+      "laender": [
+        "HR",
+        "SI"
+      ],
+      "orte": [
+        {
+          "ort": "Dugi Otok",
+          "land": "HR",
+          "lat": 44.03,
+          "lon": 15.0
+        },
+        {
+          "ort": "Željava",
+          "land": "HR",
+          "lat": 44.84,
+          "lon": 15.76
+        }
+      ],
+      "fotos": [
+        "../camper/fotos/dugi-otok-klippe.jpg",
+        "../camper/fotos/dugi-otok-bucht.jpg",
+        "../camper/fotos/zeljava-piste.jpg",
+        "../camper/fotos/zeljava-tunnel.jpg",
+        "../camper/fotos/bunker.jpg",
+        "../camper/fotos/camping-baeume.jpg",
+        "../camper/fotos/campingplatz-abend.jpg"
+      ]
+    },
+    {
+      "titel": "Island",
+      "wann": "2026-09",
+      "notiz": "Einmal rundherum auf der Ring Road.",
+      "laender": [
+        "IS"
+      ],
+      "orte": [
+        {
+          "ort": "Reykjavík",
+          "land": "IS",
+          "lat": 64.1466,
+          "lon": -21.9426
+        },
+        {
+          "ort": "Vík",
+          "land": "IS",
+          "lat": 63.4186,
+          "lon": -19.006
+        },
+        {
+          "ort": "Höfn",
+          "land": "IS",
+          "lat": 64.2539,
+          "lon": -15.2082
+        },
+        {
+          "ort": "Egilsstaðir",
+          "land": "IS",
+          "lat": 65.2653,
+          "lon": -14.3948
+        },
+        {
+          "ort": "Akureyri",
+          "land": "IS",
+          "lat": 65.6885,
+          "lon": -18.1262
+        },
+        {
+          "ort": "Reykjavík",
+          "land": "IS",
+          "lat": 64.1466,
+          "lon": -21.9426
+        }
+      ]
+    }
+  ],
+  "wunschliste": [
+    {
+      "ziel": "Kanada",
+      "land": "CA",
+      "lat": 56.13,
+      "lon": -106.35
+    },
+    {
+      "ziel": "Vietnam",
+      "land": "VN",
+      "lat": 16.0,
+      "lon": 107.8
+    },
+    {
+      "ziel": "Russland",
+      "land": "RU",
+      "lat": 61.5,
+      "lon": 105.3
+    },
+    {
+      "ziel": "Japan",
+      "land": "JP",
+      "lat": 36.2,
+      "lon": 138.25
+    },
+    {
+      "ziel": "Südkorea",
+      "land": "KR",
+      "lat": 36.5,
+      "lon": 127.9
+    },
+    {
+      "ziel": "Australien, Westküste",
+      "land": "AU",
+      "lat": -25.0,
+      "lon": 114.0
+    },
+    {
+      "ziel": "Neuseeland, Südinsel",
+      "land": "NZ",
+      "lat": -43.5,
+      "lon": 170.5
+    },
+    {
+      "ziel": "Griechenland",
+      "land": "GR",
+      "lat": 39.07,
+      "lon": 21.82
+    },
+    {
+      "ziel": "Albanien",
+      "land": "AL",
+      "lat": 41.15,
+      "lon": 20.17
+    },
+    {
+      "ziel": "Montenegro",
+      "land": "ME",
+      "lat": 42.71,
+      "lon": 19.37
+    }
+  ],
+  "start": {
+    "ort": "Linz",
+    "land": "AT",
+    "lat": 48.3069,
+    "lon": 14.2858
+  }
+}

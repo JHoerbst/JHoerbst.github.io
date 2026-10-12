@@ -1,0 +1,248 @@
+{
+  "gipfel": [
+    {
+      "name": "Mount Ngauruhoe",
+      "hoehe": 2291,
+      "gebiet": "Tongariro",
+      "land": "NZ",
+      "lat": -39.1569,
+      "lon": 175.632,
+      "notiz": "Mount Doom aus Herr der Ringe."
+    },
+    {
+      "name": "Schneeberg",
+      "hoehe": 2076,
+      "gebiet": "Rax-Schneeberg-Gruppe",
+      "land": "AT",
+      "lat": 47.7674,
+      "lon": 15.8075,
+      "notiz": "Gipfel Klosterwappen, der höchste Berg Niederösterreichs."
+    },
+    {
+      "name": "Pico Ruivo",
+      "hoehe": 1862,
+      "gebiet": "Madeira",
+      "land": "PT",
+      "lat": 32.759,
+      "lon": -16.942,
+      "notiz": "Höchster Gipfel Madeiras."
+    },
+    {
+      "name": "Pico das Torres",
+      "hoehe": 1851,
+      "gebiet": "Madeira",
+      "land": "PT",
+      "lat": 32.7566,
+      "lon": -16.9335,
+      "notiz": "Zweithöchster Gipfel Madeiras."
+    },
+    {
+      "name": "Loser",
+      "hoehe": 1838,
+      "gebiet": "Totes Gebirge",
+      "land": "AT",
+      "lat": 47.6597,
+      "lon": 13.7697
+    },
+    {
+      "name": "Katrin",
+      "hoehe": 1542,
+      "gebiet": "Salzkammergut",
+      "land": "AT",
+      "lat": 47.7036,
+      "lon": 13.62,
+      "notiz": "Hausberg von Bad Ischl."
+    },
+    {
+      "name": "Bleckwand",
+      "hoehe": 1541,
+      "gebiet": "Salzkammergut",
+      "land": "AT",
+      "lat": 47.725,
+      "lon": 13.418
+    },
+    {
+      "name": "Plöckenstein",
+      "hoehe": 1379,
+      "gebiet": "Böhmerwald",
+      "land": "CZ",
+      "lat": 48.7714,
+      "lon": 13.8589
+    },
+    {
+      "name": "Dreisessel",
+      "hoehe": 1333,
+      "gebiet": "Bayerischer Wald",
+      "land": "DE",
+      "lat": 48.781,
+      "lon": 13.799
+    },
+    {
+      "name": "Hohe Wand",
+      "hoehe": 1132,
+      "gebiet": "Gutensteiner Alpen",
+      "land": "AT",
+      "lat": 47.83,
+      "lon": 16.03,
+      "art": "klettersteig"
+    },
+    {
+      "name": "Nebelstein",
+      "hoehe": 1017,
+      "gebiet": "Waldviertel",
+      "land": "AT",
+      "lat": 48.686,
+      "lon": 14.812,
+      "art": "klettersteig"
+    },
+    {
+      "name": "Braunberg",
+      "hoehe": 912,
+      "gebiet": "Mühlviertel",
+      "land": "AT",
+      "lat": 48.462,
+      "lon": 14.555
+    },
+    {
+      "name": "Burg Altpernstein",
+      "hoehe": 822,
+      "gebiet": "Kremstal",
+      "land": "AT",
+      "lat": 47.8847,
+      "lon": 14.1573,
+      "art": "klettersteig",
+      "notiz": "Klettersteig einmal rund um die Burg."
+    },
+    {
+      "name": "The Pinnacles",
+      "hoehe": 759,
+      "gebiet": "Coromandel",
+      "land": "NZ",
+      "lat": -37.05,
+      "lon": 175.65
+    },
+    {
+      "name": "Beisteinmauer",
+      "hoehe": 575,
+      "gebiet": "Ennstal",
+      "land": "AT",
+      "lat": 47.94,
+      "lon": 14.36,
+      "art": "klettersteig",
+      "notiz": "Ternberger Klettersteig.",
+      "ungefaehr": true
+    },
+    {
+      "name": "Hussenstein",
+      "hoehe": 951,
+      "gebiet": "Mühlviertel",
+      "land": "AT",
+      "lat": 48.53,
+      "lon": 14.58,
+      "notiz": "Gedenkstein für Jan Hus."
+    },
+    {
+      "name": "Schrocken",
+      "hoehe": 2281,
+      "gebiet": "Totes Gebirge (Warscheneck)",
+      "land": "AT",
+      "lat": 47.6443,
+      "lon": 14.1864,
+      "notiz": "Gipfelstange statt Kreuz."
+    },
+    {
+      "name": "Gipfel beim Bockhartsee",
+      "hoehe": 1980,
+      "ungefaehr": true,
+      "gebiet": "Gasteinertal (Sportgastein)",
+      "land": "AT",
+      "lat": 47.0696,
+      "lon": 13.0586,
+      "notiz": "Neben dem Stausee, Name folgt."
+    },
+    {
+      "name": "Kaiser-Franz-Josefs-Höhe",
+      "hoehe": 2369,
+      "gebiet": "Großglockner",
+      "land": "AT",
+      "lat": 47.0757,
+      "lon": 12.7516,
+      "hinauf": "pajero",
+      "notiz": "Mit dem Pajero über die Hochalpenstraße, Blick auf den Großglockner."
+    },
+    {
+      "name": "Schilthorn",
+      "hoehe": 2970,
+      "gebiet": "Berner Oberland",
+      "land": "CH",
+      "lat": 46.558,
+      "lon": 7.8352,
+      "hinauf": "lift",
+      "notiz": "Piz Gloria, bekannt aus James Bond."
+    },
+    {
+      "name": "Kitzsteinhorn",
+      "hoehe": 3029,
+      "gebiet": "Kaprun",
+      "land": "AT",
+      "lat": 47.1883,
+      "lon": 12.687,
+      "hinauf": "lift",
+      "notiz": "Gipfelwelt 3000."
+    },
+    {
+      "name": "Krippenstein",
+      "hoehe": 2108,
+      "gebiet": "Dachstein",
+      "land": "AT",
+      "lat": 47.5236,
+      "lon": 13.6936,
+      "hinauf": "lift"
+    },
+    {
+      "name": "Rinsennock",
+      "hoehe": 2334,
+      "gebiet": "Nockberge (Turracher Höhe)",
+      "land": "AT",
+      "lat": 46.915,
+      "lon": 13.8461,
+      "notiz": "Gipfelrunde im November 2024 über vier oder fünf Gipfel."
+    },
+    {
+      "name": "Kornock",
+      "hoehe": 2193,
+      "gebiet": "Nockberge (Turracher Höhe)",
+      "land": "AT",
+      "lat": 46.9047,
+      "lon": 13.8806,
+      "notiz": "Teil derselben Runde wie der Rinsennock."
+    }
+  ],
+  "wunsch": [
+    {
+      "name": "Großer Priel",
+      "hoehe": 2515,
+      "gebiet": "Totes Gebirge",
+      "land": "AT",
+      "lat": 47.7173,
+      "lon": 14.0634
+    },
+    {
+      "name": "Traunstein",
+      "hoehe": 1691,
+      "gebiet": "Salzkammergut",
+      "land": "AT",
+      "lat": 47.8725,
+      "lon": 13.8336
+    },
+    {
+      "name": "Drachenwand",
+      "hoehe": 1060,
+      "gebiet": "Mondseeland",
+      "land": "AT",
+      "lat": 47.795,
+      "lon": 13.383,
+      "art": "klettersteig"
+    }
+  ]
+}

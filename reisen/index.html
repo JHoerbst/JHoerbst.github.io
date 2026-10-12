@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reisen · Julian Hörbst</title>
+  <meta name="description" content="Mein Reisepass: jede Reise ein Stempel, dazu eine Weltkarte und die Liste, wo ich noch hin will.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#5e1a26">
+  <link rel="canonical" href="https://jhoerbst.github.io/reisen/">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/archivo-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/martian-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="reisen.css">
+  <link rel="stylesheet" href="../assets/nav.css">
+</head>
+<body style="--nav-fg: #e9d7a8">
+  <!-- Tinte für die Stempel: leicht ausgefranst und ungleichmäßig -->
+  <svg class="defs" aria-hidden="true" focusable="false">
+    <filter id="tinte" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" result="rauschen"/>
+      <feDisplacementMap in="SourceGraphic" in2="rauschen" scale="1.6" result="kante"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.3" numOctaves="2" seed="11" result="flecken"/>
+      <feColorMatrix in="flecken" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.75" result="maske"/>
+      <feComposite in="kante" in2="maske" operator="in"/>
+    </filter>
+  </svg>
+
+  <header class="umschlag">
+    <nav class="sitenav" aria-label="Seiten">
+      <a class="sitenav-logo" href="../">jhoerbst</a>
+      <ul>
+        <li><a href="../">Start</a></li>
+        <li><a href="../reisen/" aria-current="page">Reisen</a></li>
+        <li><a href="../camper/">Pajero</a></li>
+        <li><a href="../kaffee/">Kaffee</a></li>
+        <li><a href="../gipfel/">Gipfel</a></li>
+      </ul>
+    </nav>
+    <div class="praegung">
+      <svg class="globus" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="26"/>
+        <ellipse cx="32" cy="32" rx="12" ry="26"/>
+        <line x1="6" y1="32" x2="58" y2="32"/>
+        <path d="M10 20 Q32 26 54 20 M10 44 Q32 38 54 44"/>
+      </svg>
+      <h1>Reisepass</h1>
+      <p class="sprachen">Passport · Passeport</p>
+      <p class="inhaber">Julian Hörbst</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="seite datenseite" aria-labelledby="daten-titel">
+      <h2 id="daten-titel" class="seitentitel">Wo ich schon war <span>und wo ich noch hin will</span></h2>
+      <div class="daten">
+        <figure class="passfoto">
+          <img src="../assets/img/me.jpg" alt="Passfoto von Julian" width="800" height="800">
+        </figure>
+        <dl class="felder" id="stats">
+          <div><dt>Name <span>Surname</span></dt><dd>Hörbst</dd></div>
+          <div><dt>Vorname <span>Given name</span></dt><dd>Julian</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="seite" aria-labelledby="karte-titel">
+      <h2 id="karte-titel" class="seitentitel">Karte <span>Map</span></h2>
+      <div class="karte-wrap">
+        <div class="karte-tools" role="group" aria-label="Kartenausschnitt">
+          <button type="button" data-view="welt" aria-pressed="true">Welt</button>
+          <button type="button" data-view="europa" aria-pressed="false">Europa</button>
+        </div>
+        <div class="karte" id="karte">
+          <p class="karte-hinweis">Karte wird geladen …</p>
+        </div>
+      </div>
+      <ul class="legende" aria-label="Legende">
+        <li><span class="sw sw-land"></span>besucht</li>
+        <li id="legende-jahre"><span class="von"></span><span class="verlauf" aria-hidden="true"></span><span class="bis"></span><span class="lbl">Orte und Routen nach Jahr</span></li>
+        <li><svg class="sw" viewBox="-5 -5 10 10" aria-hidden="true"><path d="M-4,4 L-4,-1 L0,-4.5 L4,-1 L4,4 Z" fill="#24304a"/></svg>Linz, Start der Rundreisen</li>
+        <li class="legende-tipp">Route: mit der Maus über einen Stempel fahren</li>
+        <li><span class="sw sw-wunsch"></span>will ich hin</li>
+      </ul>
+    </section>
+
+    <section class="seite stempelseite" aria-labelledby="stempel-titel">
+      <h2 id="stempel-titel" class="seitentitel">Ein- und Ausreisen <span>Entries and exits</span></h2>
+      <p class="hinweis">Jeder Stempel eine Reise. Antippen für Details und Fotos.</p>
+      <ol class="stempel-list" id="stempel" reversed></ol>
+    </section>
+
+    <section class="seite" aria-labelledby="wunsch-titel">
+      <h2 id="wunsch-titel" class="seitentitel">Visa beantragt <span>Still to go</span></h2>
+      <div class="wuerfel-zeile">
+        <button type="button" class="wuerfel-knopf" id="wuerfeln" hidden>Nächstes Ziel würfeln</button>
+        <p class="ziel-ergebnis" id="ziel-ergebnis" aria-live="polite"></p>
+      </div>
+      <ul class="wunsch-list" id="wunsch"></ul>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <p class="mrz" id="mrz" aria-hidden="true"></p>
+    <p>
+      Kartendaten: <a href="https://www.naturalearthdata.com/">Natural Earth</a> (Public Domain). Keine Cookies, kein Tracking.
+      Offenlegung gemäß § 25 MedienG: Julian Hörbst, Freistadt. Persönliche Website.
+    </p>
+  </footer>
+
+  <dialog class="reise-dialog" id="reise-dialog" aria-labelledby="dialog-titel">
+    <div class="dialog-inhalt"></div>
+    <button type="button" class="schliessen">Schließen</button>
+  </dialog>
+
+  <script src="reisen.js"></script>
+</body>
+</html>
