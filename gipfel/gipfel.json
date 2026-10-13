@@ -151,6 +151,14 @@
       "notiz": "Gipfelstange statt Kreuz."
     },
     {
+      "name": "Warscheneck",
+      "hoehe": 2388,
+      "gebiet": "Totes Gebirge (Warscheneck)",
+      "land": "AT",
+      "lat": 47.6524,
+      "lon": 14.2386
+    },
+    {
       "name": "Gipfel beim Bockhartsee",
       "hoehe": 1980,
       "ungefaehr": true,
@@ -159,45 +167,6 @@
       "lat": 47.0696,
       "lon": 13.0586,
       "notiz": "Neben dem Stausee, Name folgt."
-    },
-    {
-      "name": "Kaiser-Franz-Josefs-Höhe",
-      "hoehe": 2369,
-      "gebiet": "Großglockner",
-      "land": "AT",
-      "lat": 47.0757,
-      "lon": 12.7516,
-      "hinauf": "pajero",
-      "notiz": "Mit dem Pajero über die Hochalpenstraße, Blick auf den Großglockner."
-    },
-    {
-      "name": "Schilthorn",
-      "hoehe": 2970,
-      "gebiet": "Berner Oberland",
-      "land": "CH",
-      "lat": 46.558,
-      "lon": 7.8352,
-      "hinauf": "lift",
-      "notiz": "Piz Gloria, bekannt aus James Bond."
-    },
-    {
-      "name": "Kitzsteinhorn",
-      "hoehe": 3029,
-      "gebiet": "Kaprun",
-      "land": "AT",
-      "lat": 47.1883,
-      "lon": 12.687,
-      "hinauf": "lift",
-      "notiz": "Gipfelwelt 3000."
-    },
-    {
-      "name": "Krippenstein",
-      "hoehe": 2108,
-      "gebiet": "Dachstein",
-      "land": "AT",
-      "lat": 47.5236,
-      "lon": 13.6936,
-      "hinauf": "lift"
     },
     {
       "name": "Rinsennock",
