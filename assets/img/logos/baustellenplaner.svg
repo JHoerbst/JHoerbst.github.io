@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#16212e"/>
+  <!-- Aufgeklappter Zollstock -->
+  <g fill="none" stroke="#f4c300" stroke-width="54" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 372 L208 148 L304 340 L416 132"/>
+  </g>
+  <g fill="#16212e">
+    <circle cx="208" cy="148" r="11"/>
+    <circle cx="304" cy="340" r="11"/>
+  </g>
+</svg>
