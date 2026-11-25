@@ -74,8 +74,7 @@ werden.
 
 ## Fotos
 
-Fotos liegen bei der jeweiligen Seite, zum Beispiel `camper/fotos/`, das Porträt unter
-`assets/img/me.jpg`. Vor dem Einchecken:
+Fotos liegen bei der jeweiligen Seite, zum Beispiel `camper/fotos/`. Vor dem Einchecken:
 
 - auf etwa 1400 px Kantenlänge verkleinern
 - EXIF-Daten entfernen, vor allem GPS

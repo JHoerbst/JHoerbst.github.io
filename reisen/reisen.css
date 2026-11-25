@@ -223,13 +223,12 @@ main {
   background: var(--papier-tief);
 }
 
-.passfoto img {
+.passfoto .monogramm {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: 62% 30%;
-  filter: grayscale(1) contrast(1.05);
-  mix-blend-mode: multiply;
+  padding: 14%;
+  stroke: currentColor;
+  opacity: 0.55;
 }
 
 .felder {
